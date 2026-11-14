@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TD Insurance — Chat Mock</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+  <style>
+    :root {
+      --td-green: #008a00;
+      --td-green-dark: #005e00;
+      --td-green-bright: #00b624;
+      --td-green-soft: #eaf6ec;
+      --td-green-border: #bfe3c5;
+      --td-ink: #17231a;
+      --td-muted: #5b695e;
+      --td-bg: #f2f5f3;
+      --td-card: #ffffff;
+      --td-panel-head: #f8fbf9;
+      --td-summary-bg: #f7faf8;
+      --td-chat-bg: #f5f8f6;
+      --td-divider-bg: #e6ede8;
+      --td-divider-ink: #425246;
+      --td-input-bg: #ffffff;
+      --td-input-border: #cfd9d2;
+      --td-line: #dce4de;
+      --customer-bg: #ffffff;
+      --customer-border: #d8e2db;
+      --typing-bg: #e8efe9;
+      --shadow-sm: 0 2px 8px rgba(0, 40, 10, 0.06);
+      --shadow-md: 0 10px 30px rgba(0, 40, 10, 0.10);
+      --radius: 14px;
+    }
+
+    body.dark-mode {
+      --td-green: #00a319;
+      --td-green-dark: #3cd458;
+      --td-green-bright: #00c82b;
+      --td-green-soft: #132d1b;
+      --td-green-border: #215730;
+      --td-ink: #e8f1eb;
+      --td-muted: #9eb0a3;
+      --td-bg: #0c130f;
+      --td-card: #151f19;
+      --td-panel-head: #1b2820;
+      --td-summary-bg: #111a15;
+      --td-chat-bg: #0f1713;
+      --td-divider-bg: #1e2d24;
+      --td-divider-ink: #b9cabe;
+      --td-input-bg: #0f1713;
+      --td-input-border: #2c3f33;
+      --td-line: #25362b;
+      --customer-bg: #1c2821;
+      --customer-border: #2e4236;
+      --typing-bg: #1c2821;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.32);
+      --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--td-bg);
+      color: var(--td-ink);
+      line-height: 1.45;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    /* Top Brand Bar */
+    .topbar {
+      background: linear-gradient(90deg, #004d00 0%, #008a00 65%, #009e1f 100%);
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+      z-index: 20;
+      flex-shrink: 0;
+    }
+
+    body.dark-mode .topbar {
+      background: linear-gradient(90deg, #003300 0%, #005e00 65%, #007516 100%);
+      border-bottom: 1px solid #1e4226;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .td-shield {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      color: var(--td-green);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: -1px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-text p {
+      margin: 0;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 9px;
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
+      font-family: inherit;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-white {
+      background: #fff;
+      color: #005e00;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+    .btn-white:hover { background: #f2fbf4; }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.16);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .btn-glass:hover { background: rgba(255, 255, 255, 0.26); }
+
+    .btn-primary {
+      background: #008a00;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #005e00; }
+
+    .btn-soft {
+      background: var(--td-green-soft);
+      color: var(--td-green-dark);
+      border: 1px solid var(--td-green-border);
+    }
+    .btn-soft:hover { filter: brightness(0.96); }
+
+    .btn-outline {
+      background: var(--td-card);
+      color: var(--td-ink);
+      border: 1px solid var(--td-line);
+    }
+    .btn-outline:hover { background: var(--td-panel-head); }
+
+    .btn-danger {
+      background: #fff1f1;
+      color: #b42318;
+      border: 1px solid #f5c2c0;
+    }
+    .btn-danger:hover { background: #ffe4e4; }
+
+    body.dark-mode .btn-danger {
+      background: #351616;
+      color: #ff9c97;
+      border-color: #612626;
+    }
+    body.dark-mode .btn-danger:hover { background: #461c1c; }
+
+    .btn-sm {
+      padding: 5px 9px;
+      font-size: 12px;
+      border-radius: 7px;
+    }
+
+    /* Main Workspace */
+    .workspace {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      flex: 1;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    body.demo-mode .workspace {
+      grid-template-columns: 1fr;
+    }
+
+    body.demo-mode .sidebar {
+      display: none;
+    }
+
+    /* Left Sidebar Builder */
+    .sidebar {
+      background: var(--td-card);
+      border-right: 1px solid var(--td-line);
+      overflow-y: auto;
+      padding: 0 14px 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Sticky Quick-Access Sidebar Tabs */
+    .sidebar-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--td-card);
+      padding: 12px 0 8px 0;
+      border-bottom: 1px solid var(--td-line);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+
+    .nav-tab {
+      border: 1px solid var(--td-line);
+      background: var(--td-panel-head);
+      color: var(--td-muted);
+      border-radius: 8px;
+      padding: 7px 6px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      text-align: center;
+      transition: all 0.15s ease;
+    }
+
+    .nav-tab:hover {
+      color: var(--td-ink);
+      border-color: var(--td-green-border);
+    }
+
+    .nav-tab.active {
+      background: var(--td-green-soft);
+      color: var(--td-green-dark);
+      border-color: var(--td-green);
+    }
+
+    .panel {
+      border: 1px solid var(--td-line);
+      border-radius: var(--radius);
+      background: var(--td-card);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .panel.hidden-by-tab {
+      display: none;
+    }
+
+    .panel-header {
+      background: var(--td-panel-head);
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--td-line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--td-green-dark);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .panel.collapsed .panel-header {
+      border-bottom: none;
+    }
+
+    .panel.collapsed .panel-body {
+      display: none;
+    }
+
+    .panel-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chevron {
+      font-size: 11px;
+      opacity: 0.75;
+      transition: transform 0.15s ease;
+    }
+
+    .panel.collapsed .chevron {
+      transform: rotate(-90deg);
+    }
+
+    .panel-body {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--td-muted);
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--td-input-border);
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--td-ink);
+      background: var(--td-input-bg);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      outline: none;
+      border-color: var(--td-green);
+      box-shadow: 0 0 0 3px rgba(0, 138, 0, 0.15);
+    }
+
+    .customize-box {
+      border: 1px dashed var(--td-line);
+      border-radius: 10px;
+      padding: 10px;
+      background: var(--td-summary-bg);
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .customize-box.open {
+      display: flex;
+    }
+
+    .sender-toggle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .sender-pill {
+      padding: 9px 10px;
+      border-radius: 9px;
+      border: 2px solid var(--td-line);
+      background: var(--td-input-bg);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--td-muted);
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+
+    .sender-pill.active[data-role="agent"] {
+      border-color: var(--td-green);
+      background: var(--td-green-soft);
+      color: var(--td-green-dark);
+    }
+
+    .sender-pill.active[data-role="customer"] {
+      border-color: #2c4a34;
+      background: var(--td-panel-head);
+      color: var(--td-ink);
+    }
+
+    body.dark-mode .sender-pill.active[data-role="customer"] {
+      border-color: #6b8f74;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      border: 1px solid var(--td-green-border);
+      background: var(--td-green-soft);
+      color: var(--td-green-dark);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: filter 0.12s;
+      font-family: inherit;
+    }
+
+    .chip:hover {
+      filter: brightness(0.94);
+    }
+
+    /* Right Chat Stage */
+    .chat-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 18px;
+      overflow-y: auto;
+      background:
+        radial-gradient(circle at top right, rgba(0, 138, 0, 0.06), transparent 45%),
+        var(--td-bg);
+    }
+
+    .chat-shell {
+      width: 100%;
+      max-width: 860px;
+      background: var(--td-card);
+      border: 1px solid var(--td-line);
+      border-radius: 18px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 100px);
+      overflow: hidden;
+    }
+
+    /* Chat Header + Customer Info Card */
+    .chat-header {
+      background: var(--td-card);
+      border-bottom: 1px solid var(--td-line);
+      padding: 16px 22px;
+    }
+
+    .chat-header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .agent-presence {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar-td {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--td-green) 0%, #00b624 100%);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 138, 0, 0.22);
+    }
+
+    .presence-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--td-ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .online-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #00b624;
+      display: inline-block;
+      box-shadow: 0 0 0 3px rgba(0, 182, 36, 0.2);
+    }
+
+    .presence-sub {
+      font-size: 12px;
+      color: var(--td-muted);
+    }
+
+    .msg-counter-badge {
+      background: var(--td-green-soft);
+      color: var(--td-green-dark);
+      border: 1px solid var(--td-green-border);
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .customer-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      background: var(--td-summary-bg);
+      border: 1px solid var(--td-line);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .summary-item {
+      min-width: 0;
+    }
+
+    .summary-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.45px;
+      color: var(--td-muted);
+    }
+
+    .summary-val {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--td-ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Chat Messages Area */
+    .chat-messages {
+      flex: 1;
+      padding: 20px 22px;
+      background: var(--td-chat-bg);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      overflow-y: auto;
+    }
+
+    .day-divider {
+      align-self: center;
+      background: var(--td-divider-bg);
+      color: var(--td-divider-ink);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin: 4px 0 6px;
+    }
+
+    .msg-row {
+      display: flex;
+      flex-direction: column;
+      max-width: 78%;
+      position: relative;
+      animation: bubblePop 0.22s ease-out;
+    }
+
+    @keyframes bubblePop {
+      from { opacity: 0; transform: translateY(8px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .msg-row.agent {
+      align-self: flex-start;
+      align-items: flex-start;
+    }
+
+    .msg-row.customer {
+      align-self: flex-end;
+      align-items: flex-end;
+    }
+
+    .msg-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      color: var(--td-muted);
+      margin-bottom: 4px;
+      padding: 0 4px;
+    }
+
+    .msg-sender-name {
+      font-weight: 700;
+      color: var(--td-ink);
+    }
+
+    .msg-row.agent .msg-sender-name {
+      color: var(--td-green-dark);
+    }
+
+    .bubble {
+      padding: 12px 15px;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .msg-row.agent .bubble {
+      background: linear-gradient(180deg, #008a00 0%, #007400 100%);
+      color: #ffffff;
+      border-bottom-left-radius: 4px;
+    }
+
+    .msg-row.customer .bubble {
+      background: var(--customer-bg);
+      color: var(--td-ink);
+      border: 1px solid var(--customer-border);
+      border-bottom-right-radius: 4px;
+    }
+
+    .msg-tools {
+      display: flex;
+      gap: 4px;
+      margin-top: 5px;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+
+    .msg-row:hover .msg-tools {
+      opacity: 1;
+    }
+
+    body.demo-mode .msg-tools {
+      display: none !important;
+    }
+
+    .tool-btn {
+      border: 1px solid var(--td-line);
+      background: var(--td-card);
+      color: var(--td-muted);
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .tool-btn:hover {
+      background: var(--td-panel-head);
+      color: var(--td-ink);
+    }
+
+    .tool-btn.del:hover {
+      background: #ffeaea;
+      color: #b42318;
+      border-color: #f3bcbc;
+    }
+
+    body.dark-mode .tool-btn.del:hover {
+      background: #461c1c;
+      color: #ff9c97;
+      border-color: #7a2e2e;
+    }
+
+    /* Typing Indicator */
+    .typing-bubble {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: var(--typing-bg);
+      border: 1px solid var(--td-line);
+    }
+
+    .typing-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--td-green);
+      animation: bounce 1.1s infinite ease-in-out;
+    }
+
+    .typing-dot:nth-child(2) { animation-delay: 0.16s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.32s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.45; }
+      40% { transform: translateY(-5px); opacity: 1; }
+    }
+
+    /* Demo Click-Through Bar */
+    .demo-bar {
+      display: none;
+      background: var(--td-card);
+      border-top: 1px solid var(--td-line);
+      padding: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    body.demo-mode .demo-bar {
+      display: flex;
+    }
+
+    .demo-progress {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--td-muted);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--td-muted);
+      font-size: 14px;
+    }
+
+    /* Print / PDF Stylesheet (Always clean light print layout) */
+    .print-only-footer {
+      display: none;
+    }
+
+    @media print {
+      @page {
+        size: auto;
+        margin: 12mm;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body, body.dark-mode {
+        background: #fff !important;
+        color: #17231a !important;
+        height: auto !important;
+        overflow: visible !important;
+        display: block !important;
+        --td-ink: #17231a;
+        --td-muted: #5b695e;
+        --td-card: #ffffff;
+        --td-line: #dce4de;
+        --td-summary-bg: #f7faf8;
+        --td-divider-bg: #e6ede8;
+        --td-divider-ink: #425246;
+        --td-green-dark: #005e00;
+        --td-green-soft: #eaf6ec;
+        --td-green-border: #bfe3c5;
+      }
+
+      .topbar,
+      .sidebar,
+      .demo-bar,
+      .msg-tools,
+      .no-print {
+        display: none !important;
+      }
+
+      .workspace,
+      .chat-stage {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #fff !important;
+        overflow: visible !important;
+      }
+
+      .chat-shell {
+        max-width: 100% !important;
+        border: none !important;
+        box-shadow: none !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        background: #fff !important;
+      }
+
+      .chat-header {
+        background: #fff !important;
+        border-bottom: 2px solid #008a00 !important;
+        padding: 0 0 12px 0 !important;
+        margin-bottom: 12px !important;
+      }
+
+      .chat-messages {
+        background: #fff !important;
+        padding: 8px 0 !important;
+        overflow: visible !important;
+      }
+
+      .msg-row {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        max-width: 82% !important;
+      }
+
+      .msg-row.agent .bubble {
+        background: #008a00 !important;
+        color: #ffffff !important;
+      }
+
+      .msg-row.customer .bubble {
+        background: #f5f7f6 !important;
+        color: #17231a !important;
+        border: 1px solid #c9d4cc !important;
+      }
+
+      .print-only-footer {
+        display: block !important;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #d5ded8;
+        font-size: 11px;
+        color: #5b695e;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 960px) {
+      body {
+        height: auto;
+        overflow: auto;
+      }
+      .workspace {
+        grid-template-columns: 1fr;
+        overflow: visible;
+      }
+      .chat-shell {
+        min-height: 70vh;
+      }
+      .customer-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="brand">
+<img class="td-shield" src="data:image/jpeg;base64,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" alt="Logo" style="object-fit: cover;">      <div class="brand-text">
+        <h1 id="topbarTitle">TD Insurance — Digital Chat Mockup</h1>
+        <p id="topbarSubtitle">Claims Response Operations • All-in-One Builder</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn btn-glass" id="darkModeBtn" onclick="toggleDarkMode()">
+        🌙 Night Mode
+      </button>
+      <button class="btn btn-glass" id="toggleDemoBtn" onclick="toggleDemoMode()">
+        ▶ Start Click-Through Demo
+      </button>
+      <button class="btn btn-white" onclick="exportToPDF()">
+        📄 Download / Print PDF
+      </button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <!-- Left Builder Panel -->
+    <aside class="sidebar">
+
+      <!-- Sticky Quick Navigation Tabs (Easy Access) -->
+      <div class="sidebar-nav" role="tablist" aria-label="Sidebar sections">
+        <button type="button" class="nav-tab active" data-tab="all" onclick="setSidebarTab('all')">All</button>
+        <button type="button" class="nav-tab" data-tab="setup" onclick="setSidebarTab('setup')">1. Setup</button>
+        <button type="button" class="nav-tab" data-tab="compose" onclick="setSidebarTab('compose')">2. Compose</button>
+        <button type="button" class="nav-tab" data-tab="manage" onclick="setSidebarTab('manage')">3. Manage</button>
+      </div>
+
+      <!-- 1. Mockup Type & Info -->
+      <section class="panel" data-section="setup" id="panelSetup">
+        <div class="panel-header" onclick="togglePanel('panelSetup')">
+          <div class="panel-header-left">
+            <span class="chevron">▾</span>
+            <span>1. Mockup Type &amp; Details</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); resetDemoData();" title="Load sample chat for the selected mockup type">Load Sample</button>
+        </div>
+        <div class="panel-body">
+          <div class="form-grid">
+            <div class="field full">
+              <label>Mockup Type / Scenario</label>
+              <select id="mockupType" onchange="changeMockupType(this.value)">
+                <option value="auto_new">Auto Claim — New Intake</option>
+                <option value="res_new">Residential / Property Claim — New Intake</option>
+                <option value="escalation">Escalation / Short Chat</option>
+                <option value="general">Policy / General Support</option>
+                <option value="custom">Custom Mockup (Edit Titles &amp; Labels)</option>
+              </select>
+            </div>
+            <div class="field full">
+              <button type="button" class="btn btn-outline btn-sm" style="justify-content:center;" onclick="toggleCustomizeBox()">
+                ⚙ Customize Header Titles &amp; Summary Labels
+              </button>
+            </div>
+          </div>
+
+          <div class="customize-box" id="customizeBox">
+            <div class="form-grid">
+              <div class="field full">
+                <label>Chat Header Title</label>
+                <input type="text" id="cfgTitle" placeholder="e.g., TD Insurance — Auto Claim" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field full">
+                <label>Chat Subtitle (after Agent name)</label>
+                <input type="text" id="cfgSubtitle" placeholder="e.g., New Auto Claim Intake" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field full">
+                <label>Transcript Divider Prefix</label>
+                <input type="text" id="cfgDivider" placeholder="e.g., Auto Claim Chat Transcript" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 1 (Name)</label>
+                <input type="text" id="lblCust" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 2 (Policy)</label>
+                <input type="text" id="lblPolicy" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 3 (Claim/Ref)</label>
+                <input type="text" id="lblClaim" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 4 (Date)</label>
+                <input type="text" id="lblDate" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 5 (Subject)</label>
+                <input type="text" id="lblVehicle" oninput="saveCustomConfig()" />
+              </div>
+              <div class="field">
+                <label>Label 6 (Notes)</label>
+                <input type="text" id="lblIncident" oninput="saveCustomConfig()" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label id="formLblCust">Customer Name</label>
+              <input type="text" id="custName" placeholder="e.g., Jordan Patel" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field">
+              <label>Agent Name</label>
+              <input type="text" id="agentName" placeholder="e.g., Sarah (TD Claims Advisor)" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field">
+              <label id="formLblPolicy">Policy Number</label>
+              <input type="text" id="policyNo" placeholder="e.g., TDI-ON-8492014" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field">
+              <label id="formLblClaim">Claim Number</label>
+              <input type="text" id="claimNo" placeholder="e.g., CLM-2025-009482" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field full">
+              <label id="formLblVehicle">Vehicle (Year / Make / Model)</label>
+              <input type="text" id="vehicleInfo" placeholder="e.g., 2022 Honda Civic Touring" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field">
+              <label id="formLblDate">Date of Loss</label>
+              <input type="text" id="lossDate" placeholder="e.g., May 14, 2025" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field">
+              <label>Phone / Email</label>
+              <input type="text" id="custContact" placeholder="e.g., (416) 555-0192" oninput="saveAndRenderHeader()" />
+            </div>
+            <div class="field full">
+              <label id="formLblIncident">Incident Location / Notes</label>
+              <input type="text" id="incidentNote" placeholder="e.g., Hwy 401 Eastbound near Keele St — Rear-end collision" oninput="saveAndRenderHeader()" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Add Message Composer -->
+      <section class="panel" data-section="compose" id="panelCompose">
+        <div class="panel-header" onclick="togglePanel('panelCompose')">
+          <div class="panel-header-left">
+            <span class="chevron">▾</span>
+            <span id="composerTitle">2. Add Chat Message (Unlimited)</span>
+          </div>
+          <span style="font-size:11px; color:var(--td-muted);" id="editingBadge"></span>
+        </div>
+        <div class="panel-body">
+          <div class="sender-toggle">
+            <button type="button" class="sender-pill active" data-role="agent" onclick="setSender('agent')">
+              🛡️ TD Agent
+            </button>
+            <button type="button" class="sender-pill" data-role="customer" onclick="setSender('customer')">
+              👤 Customer
+            </button>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label>Timestamp (Optional)</label>
+              <input type="text" id="msgTime" placeholder="Auto (e.g., 10:14 AM)" />
+            </div>
+            <div class="field">
+              <label>Quick Time Step</label>
+              <button type="button" class="btn btn-outline" style="width:100%; justify-content:center;" onclick="fillNextTime()">
+                ⏱ Auto +1 min
+              </button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Message Text</label>
+            <textarea id="msgText" rows="4" placeholder="Type the Agent or Customer response here... (Press Ctrl+Enter to add)"></textarea>
+          </div>
+
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn btn-primary" style="flex:1; justify-content:center;" id="submitMsgBtn" onclick="submitMessage()">
+              + Add Message
+            </button>
+            <button type="button" class="btn btn-outline" id="cancelEditBtn" style="display:none;" onclick="cancelEdit()">
+              Cancel
+            </button>
+          </div>
+
+          <div>
+            <div style="font-size:11px; font-weight:700; color:var(--td-muted); text-transform:uppercase; margin-bottom:6px;" id="quickPromptsLabel">
+              Quick Prompts
+            </div>
+            <div class="chips" id="quickPromptsContainer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Backup & Bulk Controls -->
+      <section class="panel" data-section="manage" id="panelManage">
+        <div class="panel-header" onclick="togglePanel('panelManage')">
+          <div class="panel-header-left">
+            <span class="chevron">▾</span>
+            <span>3. Manage Conversation</span>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-soft btn-sm" onclick="exportJSON()">💾 Save Backup (.json)</button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="document.getElementById('importFile').click()">📂 Load Backup</button>
+            <input type="file" id="importFile" accept=".json" style="display:none;" onchange="importJSON(event)" />
+            <button type="button" class="btn btn-danger btn-sm" onclick="clearMessages()">🗑 Clear All Messages</button>
+          </div>
+          <div style="font-size:11px; color:var(--td-muted);">
+            Tip: Changes auto-save locally in your browser. For PDF, click <strong>Download / Print PDF</strong> at the top and choose <strong>Save as PDF</strong> (enable <em>Background graphics</em> for green bubbles).
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Right Live Chat Window -->
+    <section class="chat-stage">
+      <div class="chat-shell">
+
+        <!-- Chat Header + Customer Info Summary -->
+        <div class="chat-header">
+          <div class="chat-header-top">
+            <div class="agent-presence">
+<img class="avatar-td" src="data:image/jpeg;base64,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" alt="Logo" style="object-fit: cover;">      <div class="brand-text">
+
+                <div class="presence-title">
+                  <span id="chatHeaderTitle">TD Insurance — Auto Claim</span>
+                  <span class="online-dot" title="Online"></span>
+                </div>
+                <div class="presence-sub" id="headerSub">
+                  Agent: Sarah (Claims Advisor) • New Auto Claim Intake
+                </div>
+              </div>
+            </div>
+            <div class="msg-counter-badge" id="msgCountBadge">0 Messages</div>
+          </div>
+
+          <div class="customer-summary-grid">
+            <div class="summary-item">
+              <div class="summary-label" id="sumLblCust">Customer</div>
+              <div class="summary-val" id="sumCust">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label" id="sumLblPolicy">Policy #</div>
+              <div class="summary-val" id="sumPolicy">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label" id="sumLblClaim">Claim #</div>
+              <div class="summary-val" id="sumClaim">—</div>
+            </div>
+            <div class="summary-item">
+              <div class="summary-label" id="sumLblDate">Date of Loss</div>
+              <div class="summary-val" id="sumDate">—</div>
+            </div>
+            <div class="summary-item" style="grid-column: span 2;">
+              <div class="summary-label" id="sumLblVehicle">Vehicle</div>
+              <div class="summary-val" id="sumVehicle">—</div>
+            </div>
+            <div class="summary-item" style="grid-column: span 2;">
+              <div class="summary-label" id="sumLblIncident">Contact / Incident</div>
+              <div class="summary-val" id="sumIncident">—</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <!-- Print Footer -->
+        <div class="print-only-footer" id="printFooter">
+          TD Insurance Chat Transcript • Generated offline for claim documentation
+        </div>
+
+        <!-- Interactive Click-Through Demo Controls -->
+        <div class="demo-bar no-print">
+          <div class="demo-progress" id="demoProgress">Showing 0 of 0 messages</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="btn btn-outline btn-sm" onclick="restartDemo()">⏮ Restart</button>
+            <button class="btn btn-soft btn-sm" onclick="showAllDemo()">Show All</button>
+            <button class="btn btn-primary" id="nextBubbleBtn" onclick="nextDemoBubble()">
+              Next Bubble ➜ (Space)
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const STORAGE_KEY = "td_insurance_auto_claim_chat_v1";
+    const DARK_KEY = "td_insurance_dark_mode_v1";
+
+    const MOCKUP_PRESETS = {
+      auto_new: {
+        name: "Auto Claim — New Intake",
+        chatTitle: "TD Insurance — Auto Claim",
+        chatSubtitle: "New Auto Claim Intake",
+        dividerPrefix: "Auto Claim Chat Transcript",
+        labels: {
+          cust: "Customer",
+          policy: "Policy #",
+          claim: "Claim #",
+          date: "Date of Loss",
+          vehicle: "Vehicle",
+          incident: "Contact / Incident"
+        },
+        formLabels: {
+          cust: "Customer Name",
+          policy: "Policy Number",
+          claim: "Claim Number",
+          date: "Date of Loss",
+          vehicle: "Vehicle (Year / Make / Model)",
+          incident: "Incident Location / Notes"
+        },
+        prompts: [
+          { label: "Safety Check", role: "agent", text: "Hello! Welcome to TD Insurance Claims Support. I see you are looking to start a new auto claim today. First, is everyone involved safe and out of immediate danger?" },
+          { label: "Verify Policy", role: "agent", text: "Thank you for confirming. Could you please verify your full name, date of birth, and policy number so I can pull up your file?" },
+          { label: "Accident Details", role: "agent", text: "Could you describe what happened, including the date, approximate time, location, and weather/road conditions?" },
+          { label: "Police & 3rd Party", role: "agent", text: "Was a police report filed, and do you have the other driver's name, license plate, and insurance details?" },
+          { label: "Tow & Rental", role: "agent", text: "Is your vehicle safely drivable right now, or will we need to dispatch a tow truck and set up a rental vehicle under your coverage?" },
+          { label: "Confirm Claim #", role: "agent", text: "Your new auto claim has been officially opened! Your Claim Number is CLM-2025-009482. I have also emailed your preferred repair centre options and deductible details." },
+          { label: "Cust: Safe", role: "customer", text: "Yes, everyone is safe. No injuries, just damage to the rear bumper and trunk." },
+          { label: "Cust: Has Info", role: "customer", text: "Sure, I have the other driver's insurance slip and photos of both vehicles ready to upload." }
+        ],
+        sampleCustomer: {
+          custName: "Jordan Patel",
+          agentName: "Sarah (TD Claims Advisor)",
+          policyNo: "TDI-ON-8492014",
+          claimNo: "CLM-2025-009482",
+          vehicleInfo: "2022 Honda Civic Touring (Silver)",
+          lossDate: "May 14, 2025",
+          custContact: "(416) 555-0192",
+          incidentNote: "Hwy 401 Eastbound near Keele St — Rear-end collision"
+        },
+        sampleMessages: [
+          { role: "agent", time: "10:02 AM", text: "Hello Jordan! Welcome to TD Insurance Auto Claims Support. My name is Sarah and I'll help you set up your new auto claim today. First and most importantly, is everyone involved safe and out of immediate danger?" },
+          { role: "customer", time: "10:03 AM", text: "Hi Sarah, thanks for asking. Yes, everyone is okay—no injuries. We pulled onto the shoulder safely, though my rear bumper and trunk took a solid hit." },
+          { role: "agent", time: "10:04 AM", text: "I'm very glad to hear nobody was hurt. I have your policy TDI-ON-8492014 open for your 2022 Honda Civic Touring. Can you walk me through what happened and let me know if a police report was filed?" },
+          { role: "customer", time: "10:06 AM", text: "Traffic came to a sudden stop on Hwy 401 Eastbound near Keele St around 8:45 AM, and the vehicle behind me couldn't stop in time. Police attended and gave us an occurrence number, and I took photos of both vehicles and their insurance slip." }
+        ]
+      },
+
+      res_new: {
+        name: "Residential / Property Claim",
+        chatTitle: "TD Insurance — Residential Claim",
+        chatSubtitle: "New Residential Claim Intake",
+        dividerPrefix: "Residential Claim Chat Transcript",
+        labels: {
+          cust: "Homeowner / Insured",
+          policy: "Policy #",
+          claim: "Claim #",
+          date: "Date of Loss",
+          vehicle: "Property Address",
+          incident: "Peril / Contact"
+        },
+        formLabels: {
+          cust: "Customer / Homeowner Name",
+          policy: "Policy Number",
+          claim: "Claim Number",
+          date: "Date of Loss",
+          vehicle: "Insured Property Address",
+          incident: "Peril Type / Damage Notes"
+        },
+        prompts: [
+          { label: "Safety & Mitigation", role: "agent", text: "Hello! Welcome to TD Insurance Residential Claims Support. First, is everyone in the home safe, and have you been able to shut off the main water/power source if needed?" },
+          { label: "Verify Property", role: "agent", text: "Thank you. Can you please confirm your full name, policy number, and the address of the insured property?" },
+          { label: "Damage Scope", role: "agent", text: "Could you share which rooms or areas of the home are affected (e.g., basement, kitchen, roof) and whether there is active leaking or structural damage?" },
+          { label: "Emergency Vendor", role: "agent", text: "We can dispatch an emergency restoration vendor right away for water extraction and drying. Would you like me to arrange that for today?" },
+          { label: "ALE / Hotel", role: "agent", text: "If the home is temporarily uninhabitable, let me review your Additional Living Expenses (ALE) coverage for temporary accommodations." },
+          { label: "Confirm Res Claim #", role: "agent", text: "Your residential claim is now open under Claim #RES-2025-041289. A dedicated property adjuster will reach out within 1 business day." },
+          { label: "Cust: Pipe Burst", role: "customer", text: "Everyone is safe and we shut off the main water valve. A pipe burst under the kitchen sink and water leaked into the finished basement." },
+          { label: "Cust: Needs Mitigation", role: "customer", text: "Yes, please send a restoration crew today if possible. I also have photos of the basement flooring." }
+        ],
+        sampleCustomer: {
+          custName: "Maya Chen",
+          agentName: "David (Residential Claims Advisor)",
+          policyNo: "TDR-ON-3391042",
+          claimNo: "RES-2025-041289",
+          vehicleInfo: "142 Maplewood Ave, Mississauga, ON",
+          lossDate: "May 16, 2025",
+          custContact: "(905) 555-0148",
+          incidentNote: "Sudden pipe burst — Kitchen & basement water damage"
+        },
+        sampleMessages: [
+          { role: "agent", time: "11:10 AM", text: "Hello Maya! Welcome to TD Insurance Residential Claims Support. My name is David. First, is everyone in your household safe, and has the source of the damage been stopped?" },
+          { role: "customer", time: "11:11 AM", text: "Hi David. Yes, everyone is safe. A supply line under the kitchen sink burst this morning—we turned off the main shut-off valve, but water soaked into the basement ceiling and flooring." },
+          { role: "agent", time: "11:13 AM", text: "Good quick thinking shutting off the main valve. I have your residential policy TDR-ON-3391042 pulled up for 142 Maplewood Ave. Would you like me to dispatch an emergency restoration crew today for water extraction and drying?" },
+          { role: "customer", time: "11:14 AM", text: "Yes please, the sooner the better so mold doesn't start. I have photos ready to send over as well." }
+        ]
+      },
+
+      escalation: {
+        name: "Escalation / Short Chat",
+        chatTitle: "TD Insurance — Claims Escalation",
+        chatSubtitle: "Priority Escalation Support",
+        dividerPrefix: "Escalation Chat Transcript",
+        labels: {
+          cust: "Customer",
+          policy: "Policy #",
+          claim: "Claim / Ref #",
+          date: "Escalation Date",
+          vehicle: "Escalation Reason",
+          incident: "Contact / Priority"
+        },
+        formLabels: {
+          cust: "Customer Name",
+          policy: "Policy Number",
+          claim: "Claim / Escalation Ref #",
+          date: "Escalation Date",
+          vehicle: "Escalation Reason / Issue",
+          incident: "Priority / SLA Notes"
+        },
+        prompts: [
+          { label: "Acknowledge & Apologize", role: "agent", text: "Thank you for reaching out, and I sincerely apologize for the delay and frustration you've experienced with your claim. I'm taking ownership of this escalation right now." },
+          { label: "Priority Callback", role: "agent", text: "I have flagged your file as High Priority and escalated directly to a Senior Claims Manager for a guaranteed callback within 2 business hours." },
+          { label: "Rental Extension", role: "agent", text: "While the repair shop waits on parts, I've approved an immediate extension on your rental vehicle authorization so you won't be out of pocket." },
+          { label: "Direct Resolution", role: "agent", text: "Your supplement approval has now been processed and sent to the repair facility. Your reference confirmation is ESC-2025-8812." },
+          { label: "Cust: Delayed Callback", role: "customer", text: "I've been waiting 4 days for an update from my adjuster and my rental coverage expires tomorrow." },
+          { label: "Cust: Appreciates Fix", role: "customer", text: "Thank you for stepping in and getting the rental extended—please make sure the manager calls me this afternoon." }
+        ],
+        sampleCustomer: {
+          custName: "Liam O'Connor",
+          agentName: "Priya (Escalation Specialist)",
+          policyNo: "TDI-AB-7741209",
+          claimNo: "CLM-2025-008310",
+          vehicleInfo: "Delayed adjuster callback & rental extension request",
+          lossDate: "May 18, 2025",
+          custContact: "(403) 555-0177",
+          incidentNote: "Priority Tier 1 — 2-Hour Manager Callback SLA"
+        },
+        sampleMessages: [
+          { role: "customer", time: "2:15 PM", text: "Hi, I've left two voicemails over the last 4 days regarding Claim #CLM-2025-008310. The body shop is waiting on supplement approval and my rental expires tomorrow morning." },
+          { role: "agent", time: "2:16 PM", text: "Hi Liam, I'm Priya from Escalation Support. I sincerely apologize for the missed follow-ups—that's not the experience we want for you. I've reviewed your file and immediately extended your rental authorization through Friday so you aren't left without a vehicle." },
+          { role: "agent", time: "2:17 PM", text: "I've also sent the pending supplement directly to our Senior Appraiser Desk as Priority Tier 1, and a Claims Manager will call you at (403) 555-0177 within 2 hours." },
+          { role: "customer", time: "2:18 PM", text: "That's a huge relief, thank you Priya. I'll keep my phone handy for the manager's call." }
+        ]
+      },
+
+      general: {
+        name: "Policy / General Support",
+        chatTitle: "TD Insurance — Customer Support",
+        chatSubtitle: "Policy & Coverage Assistance",
+        dividerPrefix: "Support Chat Transcript",
+        labels: {
+          cust: "Policyholder",
+          policy: "Policy #",
+          claim: "Reference #",
+          date: "Effective Date",
+          vehicle: "Coverage / Subject",
+          incident: "Contact / Topic"
+        },
+        formLabels: {
+          cust: "Policyholder Name",
+          policy: "Policy Number",
+          claim: "Interaction / Reference #",
+          date: "Effective Date",
+          vehicle: "Vehicle / Property / Coverage",
+          incident: "Inquiry Topic / Notes"
+        },
+        prompts: [
+          { label: "Greeting", role: "agent", text: "Hello! Thanks for contacting TD Insurance Support. How can I assist you with your policy today?" },
+          { label: "Verify Identity", role: "agent", text: "I'd be happy to help check that for you. Could you please confirm your policy number and postal code?" },
+          { label: "Coverage Confirmed", role: "agent", text: "I've reviewed your policy and confirmed your requested coverage update is active. Your updated policy documents will arrive in MyInsurance within 15 minutes." },
+          { label: "Cust: Question", role: "customer", text: "Hi! I want to confirm my deductible and add comprehensive coverage / roadside assistance to my policy." }
+        ],
+        sampleCustomer: {
+          custName: "Elena Rossi",
+          agentName: "Marcus (Licensed Advisor)",
+          policyNo: "TDI-QC-5519034",
+          claimNo: "REF-2025-19402",
+          vehicleInfo: "2024 Toyota RAV4 Hybrid — Coverage Endorsement",
+          lossDate: "May 20, 2025",
+          custContact: "(514) 555-0133",
+          incidentNote: "Deductible review & roadside assistance update"
+        },
+        sampleMessages: [
+          { role: "customer", time: "9:30 AM", text: "Hi there, I'd like to confirm my collision deductible and add Grand Touring / rental coverage to my 2024 RAV4 before my road trip next week." },
+          { role: "agent", time: "9:31 AM", text: "Good morning Elena! I'm Marcus, a Licensed Advisor. I see your policy TDI-QC-5519034—your current collision deductible is $500. I can add the Grand Touring endorsement effective immediately for $4.20/month. Would you like me to apply that now?" },
+          { role: "customer", time: "9:32 AM", text: "Yes, please go ahead and add it starting today." },
+          { role: "agent", time: "9:33 AM", text: "All done! Your endorsement is active as of today (Ref #REF-2025-19402) and your updated Pink Card & policy summary are now available in the TD Insurance app." }
+        ]
+      },
+
+      custom: {
+        name: "Custom Mockup (Any Scenario)",
+        chatTitle: "TD Insurance — Digital Support",
+        chatSubtitle: "Custom Chat Mockup",
+        dividerPrefix: "Chat Transcript",
+        labels: {
+          cust: "Customer",
+          policy: "Policy #",
+          claim: "Ref / Claim #",
+          date: "Date",
+          vehicle: "Subject",
+          incident: "Contact / Notes"
+        },
+        formLabels: {
+          cust: "Customer Name",
+          policy: "Policy Number",
+          claim: "Claim / Reference #",
+          date: "Date",
+          vehicle: "Subject / Asset",
+          incident: "Notes / Details"
+        },
+        prompts: [
+          { label: "Agent Greeting", role: "agent", text: "Hello! Welcome to TD Insurance Digital Support. How can I help you today?" },
+          { label: "Verify File", role: "agent", text: "Thank you. Let me pull up your file and review those details right away." },
+          { label: "Next Steps", role: "agent", text: "Everything is updated on our end. Is there anything else I can assist you with today?" },
+          { label: "Customer Reply", role: "customer", text: "Thanks for the quick help! That answers everything." }
+        ],
+        sampleCustomer: {
+          custName: "Alex Taylor",
+          agentName: "Sam (TD Advisor)",
+          policyNo: "TDI-00-1234567",
+          claimNo: "REF-2025-001",
+          vehicleInfo: "Custom Mockup Scenario",
+          lossDate: "May 20, 2025",
+          custContact: "(416) 555-0100",
+          incidentNote: "Custom transcript notes"
+        },
+        sampleMessages: [
+          { role: "agent", time: "10:00 AM", text: "Hello Alex! Welcome to TD Insurance. How can I assist you today?" },
+          { role: "customer", time: "10:01 AM", text: "Hi Sam! I'm testing a custom chat mockup scenario." }
+        ]
+      }
+    };
+
+    function clonePresetConfig(type) {
+      const p = MOCKUP_PRESETS[type] || MOCKUP_PRESETS.auto_new;
+      return {
+        chatTitle: p.chatTitle,
+        chatSubtitle: p.chatSubtitle,
+        dividerPrefix: p.dividerPrefix,
+        labels: { ...p.labels }
+      };
+    }
+
+    let state = {
+      mockupType: "auto_new",
+      mockupConfig: clonePresetConfig("auto_new"),
+      customer: { ...MOCKUP_PRESETS.auto_new.sampleCustomer },
+      messages: MOCKUP_PRESETS.auto_new.sampleMessages.map(m => ({ id: uid(), ...m }))
+    };
+
+    let currentSender = "agent";
+    let editingId = null;
+    let insertAfterId = null;
+    let demoMode = false;
+    let demoIndex = 0;
+    let typingTimeout = null;
+    let activeSidebarTab = "all";
+
+    function uid() {
+      return "m_" + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+    }
+
+    /* Dark / Night Mode */
+    function initDarkMode() {
+      try {
+        const saved = localStorage.getItem(DARK_KEY);
+        if (saved === "1") {
+          document.body.classList.add("dark-mode");
+        }
+      } catch (e) {}
+      updateDarkModeBtn();
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      try {
+        localStorage.setItem(DARK_KEY, isDark ? "1" : "0");
+      } catch (e) {}
+      updateDarkModeBtn();
+    }
+
+    function updateDarkModeBtn() {
+      const btn = document.getElementById("darkModeBtn");
+      const isDark = document.body.classList.contains("dark-mode");
+      btn.textContent = isDark ? "☀️ Light Mode" : "🌙 Night Mode";
+    }
+
+    /* Sidebar Accessibility: Quick Tabs + Collapsible Panels */
+    function setSidebarTab(tab) {
+      activeSidebarTab = tab;
+      document.querySelectorAll(".nav-tab").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.tab === tab);
+      });
+      document.querySelectorAll(".sidebar .panel").forEach(panel => {
+        const sec = panel.dataset.section;
+        if (tab === "all" || sec === tab) {
+          panel.classList.remove("hidden-by-tab");
+          if (tab !== "all") {
+            panel.classList.remove("collapsed");
+          }
+        } else {
+          panel.classList.add("hidden-by-tab");
+        }
+      });
+    }
+
+    function togglePanel(panelId) {
+      const el = document.getElementById(panelId);
+      if (el) el.classList.toggle("collapsed");
+    }
+
+    function toggleCustomizeBox() {
+      document.getElementById("customizeBox").classList.toggle("open");
+    }
+
+    /* Load & Save State */
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && parsed.customer && Array.isArray(parsed.messages)) {
+            const type = parsed.mockupType && MOCKUP_PRESETS[parsed.mockupType] ? parsed.mockupType : "auto_new";
+            const defaultCfg = clonePresetConfig(type);
+            state = {
+              mockupType: type,
+              mockupConfig: parsed.mockupConfig ? {
+                chatTitle: parsed.mockupConfig.chatTitle || defaultCfg.chatTitle,
+                chatSubtitle: parsed.mockupConfig.chatSubtitle || defaultCfg.chatSubtitle,
+                dividerPrefix: parsed.mockupConfig.dividerPrefix || defaultCfg.dividerPrefix,
+                labels: { ...defaultCfg.labels, ...(parsed.mockupConfig.labels || {}) }
+              } : defaultCfg,
+              customer: parsed.customer,
+              messages: parsed.messages
+            };
+          }
+        }
+      } catch (e) {
+        console.warn("Could not load saved state:", e);
+      }
+
+      syncInputsFromState();
+      renderMockupUI();
+      renderHeader();
+      renderMessages();
+    }
+
+    function syncInputsFromState() {
+      document.getElementById("mockupType").value = state.mockupType || "auto_new";
+
+      const cfg = state.mockupConfig || clonePresetConfig(state.mockupType);
+      document.getElementById("cfgTitle").value = cfg.chatTitle || "";
+      document.getElementById("cfgSubtitle").value = cfg.chatSubtitle || "";
+      document.getElementById("cfgDivider").value = cfg.dividerPrefix || "";
+      document.getElementById("lblCust").value = cfg.labels.cust || "";
+      document.getElementById("lblPolicy").value = cfg.labels.policy || "";
+      document.getElementById("lblClaim").value = cfg.labels.claim || "";
+      document.getElementById("lblDate").value = cfg.labels.date || "";
+      document.getElementById("lblVehicle").value = cfg.labels.vehicle || "";
+      document.getElementById("lblIncident").value = cfg.labels.incident || "";
+
+      document.getElementById("custName").value = state.customer.custName || "";
+      document.getElementById("agentName").value = state.customer.agentName || "";
+      document.getElementById("policyNo").value = state.customer.policyNo || "";
+      document.getElementById("claimNo").value = state.customer.claimNo || "";
+      document.getElementById("vehicleInfo").value = state.customer.vehicleInfo || "";
+      document.getElementById("lossDate").value = state.customer.lossDate || "";
+      document.getElementById("custContact").value = state.customer.custContact || "";
+      document.getElementById("incidentNote").value = state.customer.incidentNote || "";
+    }
+
+    function persistState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        console.warn("LocalStorage save failed:", e);
+      }
+    }
+
+    /* Mockup Type Switching & Custom Labels */
+    function changeMockupType(newType) {
+      if (!MOCKUP_PRESETS[newType]) return;
+      state.mockupType = newType;
+      state.mockupConfig = clonePresetConfig(newType);
+
+      if (newType === "custom") {
+        document.getElementById("customizeBox").classList.add("open");
+      }
+
+      syncInputsFromState();
+      persistState();
+      renderMockupUI();
+      renderHeader();
+      renderMessages();
+    }
+
+    function saveCustomConfig() {
+      state.mockupConfig = {
+        chatTitle: document.getElementById("cfgTitle").value.trim() || "TD Insurance — Digital Chat",
+        chatSubtitle: document.getElementById("cfgSubtitle").value.trim() || "Digital Support",
+        dividerPrefix: document.getElementById("cfgDivider").value.trim() || "Chat Transcript",
+        labels: {
+          cust: document.getElementById("lblCust").value.trim() || "Customer",
+          policy: document.getElementById("lblPolicy").value.trim() || "Policy #",
+          claim: document.getElementById("lblClaim").value.trim() || "Claim #",
+          date: document.getElementById("lblDate").value.trim() || "Date",
+          vehicle: document.getElementById("lblVehicle").value.trim() || "Subject",
+          incident: document.getElementById("lblIncident").value.trim() || "Contact / Notes"
+        }
+      };
+      persistState();
+      renderMockupUI();
+      renderHeader();
+      renderMessages();
+    }
+
+    function renderMockupUI() {
+      const preset = MOCKUP_PRESETS[state.mockupType] || MOCKUP_PRESETS.auto_new;
+      const cfg = state.mockupConfig || clonePresetConfig(state.mockupType);
+
+      // Update chat title & labels
+      document.getElementById("chatHeaderTitle").textContent = cfg.chatTitle;
+      document.getElementById("sumLblCust").textContent = cfg.labels.cust;
+      document.getElementById("sumLblPolicy").textContent = cfg.labels.policy;
+      document.getElementById("sumLblClaim").textContent = cfg.labels.claim;
+      document.getElementById("sumLblDate").textContent = cfg.labels.date;
+      document.getElementById("sumLblVehicle").textContent = cfg.labels.vehicle;
+      document.getElementById("sumLblIncident").textContent = cfg.labels.incident;
+
+      // Update form field labels
+      document.getElementById("formLblCust").textContent =
+        state.mockupType === "custom" ? cfg.labels.cust : preset.formLabels.cust;
+      document.getElementById("formLblPolicy").textContent =
+        state.mockupType === "custom" ? cfg.labels.policy : preset.formLabels.policy;
+      document.getElementById("formLblClaim").textContent =
+        state.mockupType === "custom" ? cfg.labels.claim : preset.formLabels.claim;
+      document.getElementById("formLblDate").textContent =
+        state.mockupType === "custom" ? cfg.labels.date : preset.formLabels.date;
+      document.getElementById("formLblVehicle").textContent =
+        state.mockupType === "custom" ? cfg.labels.vehicle : preset.formLabels.vehicle;
+      document.getElementById("formLblIncident").textContent =
+        state.mockupType === "custom" ? cfg.labels.incident : preset.formLabels.incident;
+
+      // Render Quick Prompts for current mockup type
+      document.getElementById("quickPromptsLabel").textContent = `Quick Prompts (${preset.name})`;
+      const chipsWrap = document.getElementById("quickPromptsContainer");
+      chipsWrap.innerHTML = "";
+      preset.prompts.forEach(p => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "chip";
+        btn.textContent = p.label;
+        btn.onclick = () => useTemplate(p.role, p.text);
+        chipsWrap.appendChild(btn);
+      });
+    }
+
+    function saveAndRenderHeader() {
+      state.customer = {
+        custName: document.getElementById("custName").value.trim(),
+        agentName: document.getElementById("agentName").value.trim(),
+        policyNo: document.getElementById("policyNo").value.trim(),
+        claimNo: document.getElementById("claimNo").value.trim(),
+        vehicleInfo: document.getElementById("vehicleInfo").value.trim(),
+        lossDate: document.getElementById("lossDate").value.trim(),
+        custContact: document.getElementById("custContact").value.trim(),
+        incidentNote: document.getElementById("incidentNote").value.trim()
+      };
+      persistState();
+      renderHeader();
+      renderMessages();
+    }
+
+    function renderHeader() {
+      const c = state.customer;
+      const cfg = state.mockupConfig || clonePresetConfig(state.mockupType);
+
+      document.getElementById("headerSub").textContent =
+        `Agent: ${c.agentName || "TD Claims Advisor"} • ${cfg.chatSubtitle || "Digital Support"}`;
+
+      document.getElementById("sumCust").textContent = c.custName || "—";
+      document.getElementById("sumPolicy").textContent = c.policyNo || "—";
+      document.getElementById("sumClaim").textContent = c.claimNo || "Pending";
+      document.getElementById("sumDate").textContent = c.lossDate || "—";
+      document.getElementById("sumVehicle").textContent = c.vehicleInfo || "—";
+
+      const contactAndIncident = [c.custContact, c.incidentNote].filter(Boolean).join(" • ");
+      document.getElementById("sumIncident").textContent = contactAndIncident || "—";
+
+      document.getElementById("printFooter").textContent =
+        `${cfg.chatTitle} • Policy: ${c.policyNo || "N/A"} • ${cfg.labels.claim}: ${c.claimNo || "N/A"} • ${cfg.labels.cust}: ${c.custName || "N/A"}`;
+    }
+
+    function setSender(role) {
+      currentSender = role;
+      document.querySelectorAll(".sender-pill").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.role === role);
+      });
+    }
+
+    function useTemplate(role, text) {
+      setSender(role);
+      const box = document.getElementById("msgText");
+      box.value = text;
+      box.focus();
+    }
+
+    function getCurrentFormattedTime() {
+      const now = new Date();
+      return now.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    }
+
+    function fillNextTime() {
+      const last = state.messages[state.messages.length - 1];
+      if (!last || !last.time) {
+        document.getElementById("msgTime").value = getCurrentFormattedTime();
+        return;
+      }
+      const match = last.time.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+      if (!match) {
+        document.getElementById("msgTime").value = getCurrentFormattedTime();
+        return;
+      }
+      let hour = parseInt(match[1], 10);
+      let min = parseInt(match[2], 10) + 1;
+      let ampm = match[3].toUpperCase();
+      if (min >= 60) {
+        min = 0;
+        hour += 1;
+        if (hour === 12) ampm = ampm === "AM" ? "PM" : "AM";
+        if (hour > 12) hour = 1;
+      }
+      document.getElementById("msgTime").value = `${hour}:${String(min).padStart(2, "0")} ${ampm}`;
+    }
+
+    function startInsertAfter(id) {
+      const idx = state.messages.findIndex(m => m.id === id);
+      if (idx === -1) return;
+      cancelEdit();
+      insertAfterId = id;
+      document.getElementById("composerTitle").textContent = "Insert Message Between";
+      document.getElementById("editingBadge").textContent = `Adding after #${idx + 1}`;
+      document.getElementById("submitMsgBtn").textContent = "+ Insert Here";
+      document.getElementById("cancelEditBtn").style.display = "inline-flex";
+
+      const composePanel = document.getElementById("panelCompose");
+      composePanel.classList.remove("collapsed");
+      if (activeSidebarTab !== "all" && activeSidebarTab !== "compose") {
+        setSidebarTab("compose");
+      }
+      document.getElementById("msgText").focus();
+    }
+
+    function submitMessage() {
+      const textEl = document.getElementById("msgText");
+      const timeEl = document.getElementById("msgTime");
+      const text = textEl.value.trim();
+      if (!text) {
+        textEl.focus();
+        return;
+      }
+
+      const time = timeEl.value.trim() || getNextAutoTime();
+      const chatBox = document.getElementById("chatMessages");
+      const savedScroll = chatBox.scrollTop;
+      let scrollBottom = true;
+
+      if (editingId) {
+        const idx = state.messages.findIndex(m => m.id === editingId);
+        if (idx !== -1) {
+          state.messages[idx].role = currentSender;
+          state.messages[idx].time = time;
+          state.messages[idx].text = text;
+        }
+        cancelEdit();
+      } else if (insertAfterId) {
+        const idx = state.messages.findIndex(m => m.id === insertAfterId);
+        const newMsg = {
+          id: uid(),
+          role: currentSender,
+          time,
+          text
+        };
+        if (idx !== -1) {
+          state.messages.splice(idx + 1, 0, newMsg);
+          scrollBottom = false;
+        } else {
+          state.messages.push(newMsg);
+        }
+        cancelEdit();
+      } else {
+        state.messages.push({
+          id: uid(),
+          role: currentSender,
+          time,
+          text
+        });
+        textEl.value = "";
+        timeEl.value = "";
+      }
+
+      persistState();
+      renderMessages(scrollBottom);
+      if (!scrollBottom) {
+        chatBox.scrollTop = savedScroll;
+      }
+      textEl.focus();
+    }
+
+    function getNextAutoTime() {
+      const last = state.messages[state.messages.length - 1];
+      if (!last || !last.time) return getCurrentFormattedTime();
+      const match = last.time.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+      if (!match) return getCurrentFormattedTime();
+      let hour = parseInt(match[1], 10);
+      let min = parseInt(match[2], 10) + 1;
+      let ampm = match[3].toUpperCase();
+      if (min >= 60) {
+        min = 0;
+        hour += 1;
+        if (hour === 12) ampm = ampm === "AM" ? "PM" : "AM";
+        if (hour > 12) hour = 1;
+      }
+      return `${hour}:${String(min).padStart(2, "0")} ${ampm}`;
+    }
+
+    function startEdit(id) {
+      const msg = state.messages.find(m => m.id === id);
+      if (!msg) return;
+      editingId = id;
+      insertAfterId = null;
+      setSender(msg.role);
+      document.getElementById("msgTime").value = msg.time;
+      document.getElementById("msgText").value = msg.text;
+      document.getElementById("composerTitle").textContent = "Edit Message";
+      document.getElementById("editingBadge").textContent = "Editing...";
+      document.getElementById("submitMsgBtn").textContent = "✓ Save Changes";
+      document.getElementById("cancelEditBtn").style.display = "inline-flex";
+
+      // Ensure Compose panel is visible & expanded if user clicked Edit from chat
+      const composePanel = document.getElementById("panelCompose");
+      composePanel.classList.remove("collapsed");
+      if (activeSidebarTab !== "all" && activeSidebarTab !== "compose") {
+        setSidebarTab("compose");
+      }
+      document.getElementById("msgText").focus();
+    }
+
+    function cancelEdit() {
+      editingId = null;
+      insertAfterId = null;
+      document.getElementById("msgTime").value = "";
+      document.getElementById("msgText").value = "";
+      document.getElementById("composerTitle").textContent = "2. Add Chat Message (Unlimited)";
+      document.getElementById("editingBadge").textContent = "";
+      document.getElementById("submitMsgBtn").textContent = "+ Add Message";
+      document.getElementById("cancelEditBtn").style.display = "none";
+    }
+
+    function deleteMessage(id) {
+      state.messages = state.messages.filter(m => m.id !== id);
+      if (editingId === id) cancelEdit();
+      persistState();
+      renderMessages();
+    }
+
+    function moveMessage(id, dir) {
+      const idx = state.messages.findIndex(m => m.id === id);
+      if (idx === -1) return;
+      const target = idx + dir;
+      if (target < 0 || target >= state.messages.length) return;
+      const temp = state.messages[idx];
+      state.messages[idx] = state.messages[target];
+      state.messages[target] = temp;
+      persistState();
+      renderMessages();
+    }
+
+    function renderMessages(scrollToBottom = false, showTyping = false) {
+      const container = document.getElementById("chatMessages");
+      const total = state.messages.length;
+      document.getElementById("msgCountBadge").textContent =
+        `${total} ${total === 1 ? "Message" : "Messages"}`;
+
+      const visibleList = demoMode ? state.messages.slice(0, demoIndex) : state.messages;
+
+      container.innerHTML = "";
+
+      const cfg = state.mockupConfig || clonePresetConfig(state.mockupType);
+      const prefix = cfg.dividerPrefix || "Chat Transcript";
+      const dateLbl = cfg.labels.date || "Date";
+      const dateLabel = state.customer.lossDate
+        ? `${prefix} • ${dateLbl}: ${state.customer.lossDate}`
+        : `TD Insurance • ${prefix}`;
+
+      const divider = document.createElement("div");
+      divider.className = "day-divider";
+      divider.textContent = dateLabel;
+      container.appendChild(divider);
+
+      if (total === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.innerHTML = "No messages yet. Use the left panel to add unlimited <strong>TD Agent</strong> and <strong>Customer</strong> messages.";
+        container.appendChild(empty);
+      } else if (demoMode && visibleList.length === 0 && !showTyping) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.innerHTML = "Demo ready! Click <strong>Next Bubble ➜</strong> (or press <strong>Spacebar</strong>) to step through the conversation.";
+        container.appendChild(empty);
+      }
+
+      visibleList.forEach((msg, idx) => {
+        const row = document.createElement("div");
+        row.className = `msg-row ${msg.role}`;
+
+        const senderDisplay = msg.role === "agent"
+          ? (state.customer.agentName || "TD Claims Advisor")
+          : (state.customer.custName || "Customer");
+
+        const meta = document.createElement("div");
+        meta.className = "msg-meta";
+        meta.innerHTML = `<span class="msg-sender-name">${escapeHtml(senderDisplay)}</span> • <span>${escapeHtml(msg.time || "")}</span>`;
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.textContent = msg.text;
+
+        const tools = document.createElement("div");
+        tools.className = "msg-tools";
+        tools.innerHTML = `
+          <button class="tool-btn" onclick="startInsertAfter('${msg.id}')" title="Add a message right below this one">+ Add Below</button>
+
+          <button class="tool-btn" onclick="moveMessage('${msg.id}', -1)" ${idx === 0 ? "disabled" : ""} title="Move Up">↑</button>
+          <button class="tool-btn" onclick="moveMessage('${msg.id}', 1)" ${idx === visibleList.length - 1 ? "disabled" : ""} title="Move Down">↓</button>
+          <button class="tool-btn" onclick="startEdit('${msg.id}')">Edit</button>
+          <button class="tool-btn del" onclick="deleteMessage('${msg.id}')">Delete</button>
+        `;
+
+        row.appendChild(meta);
+        row.appendChild(bubble);
+        row.appendChild(tools);
+        container.appendChild(row);
+      });
+
+      if (demoMode && showTyping && demoIndex < total) {
+        const nextMsg = state.messages[demoIndex];
+        const row = document.createElement("div");
+        row.className = `msg-row ${nextMsg.role}`;
+        const typing = document.createElement("div");
+        typing.className = "typing-bubble";
+        typing.innerHTML = `<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>`;
+        row.appendChild(typing);
+        container.appendChild(row);
+      }
+
+      if (demoMode) {
+        document.getElementById("demoProgress").textContent =
+          `Showing ${demoIndex} of ${total} messages`;
+        const nextBtn = document.getElementById("nextBubbleBtn");
+        nextBtn.disabled = demoIndex >= total;
+        nextBtn.textContent = demoIndex >= total ? "✓ End of Chat" : "Next Bubble ➜ (Space)";
+      }
+
+      if (scrollToBottom || demoMode) {
+        container.scrollTop = container.scrollHeight;
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    /* Interactive Demo Mode */
+    function toggleDemoMode() {
+      demoMode = !demoMode;
+      document.body.classList.toggle("demo-mode", demoMode);
+      const btn = document.getElementById("toggleDemoBtn");
+
+      if (demoMode) {
+        btn.textContent = "✎ Back to Editor";
+        demoIndex = state.messages.length > 0 ? 1 : 0;
+      } else {
+        btn.textContent = "▶ Start Click-Through Demo";
+        if (typingTimeout) clearTimeout(typingTimeout);
+      }
+      renderMessages(true);
+    }
+
+    function nextDemoBubble() {
+      if (!demoMode || demoIndex >= state.messages.length) return;
+      if (typingTimeout) {
+        clearTimeout(typingTimeout);
+        typingTimeout = null;
+        demoIndex++;
+        renderMessages(true, false);
+        return;
+      }
+      renderMessages(true, true);
+      typingTimeout = setTimeout(() => {
+        typingTimeout = null;
+        demoIndex++;
+        renderMessages(true, false);
+      }, 320);
+    }
+
+    function restartDemo() {
+      if (typingTimeout) clearTimeout(typingTimeout);
+      demoIndex = 0;
+      renderMessages(true, false);
+    }
+
+    function showAllDemo() {
+      if (typingTimeout) clearTimeout(typingTimeout);
+      demoIndex = state.messages.length;
+      renderMessages(true, false);
+    }
+
+    /* PDF Export */
+    function exportToPDF() {
+      const wasDemo = demoMode;
+      const savedDemoIdx = demoIndex;
+      if (wasDemo) {
+        demoIndex = state.messages.length;
+        renderMessages(false, false);
+      }
+      window.print();
+      if (wasDemo) {
+        demoIndex = savedDemoIdx;
+        renderMessages(false, false);
+      }
+    }
+
+    /* Backup & Reset */
+    function clearMessages() {
+      if (!confirm("Delete all chat messages? Your customer info will remain.")) return;
+      state.messages = [];
+      cancelEdit();
+      persistState();
+      renderMessages();
+    }
+
+    function resetDemoData() {
+      const preset = MOCKUP_PRESETS[state.mockupType] || MOCKUP_PRESETS.auto_new;
+      if (!confirm(`Load sample details & messages for "${preset.name}"? This will replace your current fields and messages.`)) return;
+      state.mockupConfig = clonePresetConfig(state.mockupType);
+      state.customer = { ...preset.sampleCustomer };
+      state.messages = preset.sampleMessages.map(m => ({ id: uid(), ...m }));
+      cancelEdit();
+      persistState();
+      syncInputsFromState();
+      renderMockupUI();
+      renderHeader();
+      renderMessages();
+    }
+
+    function exportJSON() {
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      const safeName = (state.customer.claimNo || `td-${state.mockupType}-chat`).replace(/[^a-z0-9_-]/gi, "_");
+      a.download = `${safeName}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (!parsed.customer || !Array.isArray(parsed.messages)) {
+            alert("Invalid backup file format.");
+            return;
+          }
+          const type = parsed.mockupType && MOCKUP_PRESETS[parsed.mockupType] ? parsed.mockupType : "auto_new";
+          const defaultCfg = clonePresetConfig(type);
+          state = {
+            mockupType: type,
+            mockupConfig: parsed.mockupConfig ? {
+              chatTitle: parsed.mockupConfig.chatTitle || defaultCfg.chatTitle,
+              chatSubtitle: parsed.mockupConfig.chatSubtitle || defaultCfg.chatSubtitle,
+              dividerPrefix: parsed.mockupConfig.dividerPrefix || defaultCfg.dividerPrefix,
+              labels: { ...defaultCfg.labels, ...(parsed.mockupConfig.labels || {}) }
+            } : defaultCfg,
+            customer: parsed.customer,
+            messages: parsed.messages
+          };
+          persistState();
+          syncInputsFromState();
+          renderMockupUI();
+          renderHeader();
+          renderMessages();
+        } catch {
+          alert("Could not read JSON file.");
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = "";
+    }
+
+    /* Keyboard shortcuts */
+    document.getElementById("msgText").addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.key === "Enter") {
+        e.preventDefault();
+        submitMessage();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (demoMode && (e.code === "Space" || e.code === "ArrowRight")) {
+        if (document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA" && document.activeElement.tagName !== "SELECT") {
+          e.preventDefault();
+          nextDemoBubble();
+        }
+      }
+    });
+
+    initDarkMode();
+    loadState();
+  </script>
+</body>
+</html>
