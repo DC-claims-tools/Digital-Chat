@@ -1,0 +1,387 @@
+Report conversation Yesterday 4:38 PM I can help you create professional, empathetic, and concise claim-related chat responses that you can copy and paste directly into AWS Amazon Connect while assisting TD Insurance customers. I'll tailor the wording to your Claims Response Operations (CRO) role, focusing on: Empathy: Acknowledge the customer's situation without sounding repetitive or scripted. Professionalism: Use clear, reassuring language appropriate for insurance claims. Efficiency: Keep messages short enough for live chat. Customer satisfaction: Make customers feel heard, supported, and informed. Accuracy: Avoid promising coverage, claim outcomes, or timelines that haven't been confirmed. I can help with new auto claims, home claims, Accident Benefits, existing claims, deductible inquiries, transfers, and claim follow-ups. Just tell me the situation or what you want to say to the customer, even if it's written in rough English. I'll turn it into a polished, customer-ready message that sounds natural rather than robotic. What's the first claim scenario you need a response for? Here's a professional, friendly, and customer focused response that sets expectations without mentioning how long the process takes.
+
+Writing
+
+**I'd be happy to help you start your claim! You also have the option to submit your claim directly through the TD Insurance App, which offers a quicker and more convenient experience. If you'd prefer to continue with me here, I'm more than happy to assist! We'll need to go through a detailed questionnaire to gather information about the incident, so I just want to make sure you have enough time to complete the process. Don't worry if you don't have all the details available right now. I'll guide you through each question and review the information required in our system. Would you prefer to proceed through the app or continue with me here?**
+
+Why this works: It encourages the customer to use the app without discouraging them from chatting. It also sets expectations that the process is detailed, confirms that missing information is okay, and gives the customer a choice. I would recommend keeping this as your standard opening message before beginning the claim questionnaire, so customers understand the process and can decide whether they have enough time to proceed.
+
+Writing
+
+**I'd be happy to help you start your claim! You also have the option to submit your claim through the TD Insurance App, which may be a quicker and more convenient option. If you'd prefer to continue with me here, I'm happy to assist! We'll be going through a detailed questionnaire about the incident, so I just want to make sure you have enough time to go through the process. I'll review each question with you to see what information you have available, as sometimes certain details may come to mind as we go along. No worries if you don't have all the information right now! You can provide any missing details to your Claims Advisor once they contact you. Once your claim is submitted, you'll also receive your Claims Advisor's contact information so you can reach out directly with any additional questions. Would you prefer to proceed through the app or continue with me here?**
+
+This version sets clear expectations while reassuring the customer that they don't need to have every detail ready to begin. It also explains why you'll be asking multiple questions, which can help reduce frustration during the claim intake process.
+
+Writing
+
+**I'd be happy to help you start your claim! You also have the option to submit your claim through the TD Insurance App, which may be a quicker and more convenient option. If you'd prefer to continue with me here, I'm happy to assist! We'll be going through a detailed questionnaire about the incident, so I just want to make sure you have enough time to complete the process. I'll review each question with you to see what information you have available, as sometimes certain details may come to mind as we go along. No worries if you don't have all the information right now! You can always provide any missing details to your Claims Advisor once they contact you. Once your claim is submitted, your Claims Advisor will contact you within the next business day. You'll also receive their contact information so you can reach out directly if you have any questions or additional information to share. Would you prefer to proceed through the app or continue with me here?**
+
+Yes. The key is to acknowledge their concern, reassure them that you'll address it, and gently redirect the conversation back to the claim questionnaire without making the customer feel like they're interrupting. Recommended response — Professional, warm, and natural
+
+Writing
+
+**That's a great question, and I completely understand why you'd want to know! I'll be happy to go over your questions with you. For now, would it be alright if we finish gathering the details of the incident first? This will help me make sure everything is documented accurately, and we can review your questions together afterward.**
+
+Shorter version — For quick redirection
+
+Writing
+
+**Absolutely, I'd be happy to help clarify that! Would you mind if we finish going through the incident details first? I want to make sure I capture everything accurately, and then we can address any questions you have.**
+
+When they ask about fault, deductible, or coverage
+
+Writing
+
+**I completely understand your concern, and that's definitely something we can discuss. Some details, such as fault determination and deductible applicability, may need to be reviewed by your Claims Advisor. For now, let's finish documenting the incident so we have all the necessary information. I'll be happy to address your questions afterward and clarify what to expect next.**
+
+When the customer keeps asking questions during the intake
+
+Writing
+
+**I appreciate your questions, and I want to make sure we address all of them. To avoid missing any important details, would it be okay if we complete the remaining questions first? Once we're done, we can go through your concerns one by one, and I'll help clarify everything I can.**
+
+My recommendation: Use the first response as your standard message. It sounds respectful and collaborative rather than instructing the customer to wait. One important distinction for your CRO role: You can explain the general claims process, but avoid confirming fault, deductible applicability, or coverage before the appropriate review. This helps set realistic expectations without making promises. You could also add this sentence to your initial claim-opening message to prevent interruptions before they happen:
+
+Writing
+
+**As we go through the questionnaire, you may have questions about the claims process, coverage, or next steps. I'll be happy to address those once we've gathered the incident details, so we can stay on track and make sure nothing important is missed.**
+
+This last approach is especially useful for Guidewire ClaimCenter because it establishes expectations before the customer starts asking questions in the middle of a detailed section. I recommend breaking this into short, individual questions instead of sending one long message. This will make it easier for customers to respond without missing important details, while allowing you to follow the same sequence in Guidewire ClaimCenter. I've organized the questions in a natural order, with customer-friendly wording that you can copy directly into Amazon Connect. 1. Insured vehicle information Question 1 — Vehicle identification
+
+Writing
+
+**To begin, could you please confirm which of your insured vehicles was involved in the incident?**
+
+Question 2 — Vehicle details
+
+Writing
+
+**Could you please confirm the year, make, model, and colour of your vehicle?**
+
+Question 3 — Mileage
+
+Writing
+
+**What is the approximate mileage on your vehicle? An estimate is perfectly fine!**
+
+Question 4 — Licence plate
+
+Writing
+
+**Could you please provide your vehicle's licence plate number and the province where it's registered?**
+
+2. Accident circumstances Question 5 — What happened?
+
+Writing
+
+**Could you please walk me through what happened during the incident? Feel free to explain it in your own words, and I'll ask any additional questions as needed.**
+
+Question 6 — Number of vehicles
+
+Writing
+
+**How many vehicles were involved in total, including yours?**
+
+3. Your vehicle's position Question 7 — Road name
+
+Writing
+
+**What road or street were you travelling on when the incident occurred?**
+
+Question 8 — Direction of travel
+
+Writing
+
+**Which direction were you travelling? For example, northbound, southbound, eastbound, or westbound.**
+
+Question 9 — Lane position
+
+Writing
+
+**Which lane were you travelling in? For example, the left, middle, or right lane. If you remember, how many lanes were there in your direction?**
+
+Question 10 — Occupants
+
+Writing
+
+**How many people were in your vehicle at the time of the incident, including yourself?**
+
+4. Other vehicle's position Question 11 — Other vehicle's road
+
+Writing
+
+**Do you recall which road or street the other vehicle was travelling on?**
+
+Question 12 — Other vehicle's direction
+
+Writing
+
+**Which direction was the other vehicle travelling?**
+
+Question 13 — Other vehicle's lane
+
+Writing
+
+**Do you remember which lane the other vehicle was in before the collision?**
+
+Question 14 — Other vehicle's occupants
+
+Writing
+
+**Do you know approximately how many people were in the other vehicle? It's completely fine if you're unsure.**
+
+5. Transition to the next section
+
+Writing
+
+**Thank you for providing those details! I appreciate your patience. I'll continue with a few more questions to make sure we have the information needed for your claim.**
+
+Quick reference — Guidewire ClaimCenter # Information required Question prompt
+
+1 Insured vehicle **Which vehicle was involved?** 2 Year, make, model, colour **Can you confirm these details?** 3 Mileage **Approximate kilometres?** 4 Licence plate **Plate number and province?** 5 Circumstances **What happened?** 6 Number of vehicles **How many vehicles in total?** 7 Insured road **Which road were you on?** 8 Insured direction **Which direction were you heading?** 9 Insured lane **Which lane were you in?** 10 Insured occupants **How many people, including you?** 11 Third-party road **Which road were they on?** 12 Third-party direction **Which direction were they heading?** 13 Third-party lane **Which lane were they in?** 14 Third-party occupants **Approximately how many people?**
+
+A suggestion to make your chats faster Rather than asking all 14 questions individually, combine related questions into small groups of two or three. For example, once you reach the third-party vehicle section, you can send:
+
+Writing
+
+**Now, regarding the other vehicle, do you recall which road they were travelling on, which direction they were heading, and which lane they were in? Please share whatever you remember.**
+
+This allows you to collect three related details in one message without overwhelming the customer. One important tip: If the customer has already provided information in their initial accident description, don't ask them to repeat it. Simply confirm anything that's unclear or missing. This makes the interaction feel more conversational and less like an interrogation. Now how do I ask to get a response like any party involved in the accident was injured?
+
+Writing
+
+**Was anyone involved in the accident injured or experiencing any pain or discomfort, including yourself, your passengers, or anyone in the other vehicle?**
+
+This wording is helpful because customers may not consider minor pain, soreness, or discomfort an injury, especially immediately after an accident. I want it to be all rounder like even for single vehicle accidents or where insured hit a cyclist
+
+Writing
+
+**Did anyone involved in the incident, including yourself or any other person, sustain any injuries or experience any pain or discomfort?**
+
+This wording works for all types of accidents, including single-vehicle collisions, multi-vehicle accidents, and incidents involving pedestrians or cyclists. It also captures pain or discomfort that the customer might not initially consider an injury. Now when I ask them and they reply to me how do I acknowledge their response You can use different acknowledgements depending on whether the customer confirms injuries, denies injuries, or is unsure. The goal is to show empathy without making the conversation feel repetitive, while smoothly moving to your next Guidewire question. 1. If the customer says no injuries
+
+Writing
+
+**I'm glad to hear that no one was injured. Thank you for confirming!**
+
+2. If the customer confirms injuries
+
+Writing
+
+**I'm sorry to hear that. I hope everyone is doing okay. Thank you for letting me know. I'll make sure this information is documented as we go through your claim.**
+
+3. If the customer reports minor pain or discomfort
+
+Writing
+
+**I'm sorry to hear about the discomfort. I hope you're doing alright. Thank you for sharing that with me.**
+
+4. If the customer is unsure whether anyone was injured
+
+Writing
+
+**That's completely understandable. Thank you for sharing what you know so far. We can document the information currently available, and you can provide any updates to your Claims Advisor.**
+
+5. If the customer says someone was seriously injured
+
+Writing
+
+**I'm very sorry to hear that. I hope everyone is receiving the care they need. Thank you for letting me know. I'll make sure we capture this information as part of your claim.**
+
+My recommendation for live chat: Keep your acknowledgements short and natural. If no injuries are reported, you can move directly to the next question. If injuries are reported, take a moment to acknowledge them and follow your Accident Benefits and injury-intake procedures. If someone may be in immediate danger or needs urgent medical attention, prioritize emergency assistance rather than continuing the questionnaire. When collecting accident details in Guidewire ClaimCenter, your acknowledgements should be short, natural, and empathetic, especially because you'll be asking several follow-up questions. You don't need to thank the customer after every response. Here are some ready-to-use messages for different situations. 1. Before asking what happened
+
+Writing
+
+**I'd like to gather a few details about how the incident occurred. Could you please walk me through what happened in your own words? I'll ask a few follow-up questions afterward to make sure everything is documented accurately.**
+
+2. After the customer explains the accident If it was a stressful or upsetting accident:
+
+Writing
+
+**I'm sorry you had to go through that. I appreciate you taking the time to explain what happened. I'll just clarify a few details to make sure everything is documented accurately.**
+
+If it was a minor accident:
+
+Writing
+
+**Thank you for explaining what happened. That gives me a better understanding of the incident. I'll just confirm a few additional details.**
+
+3. When acknowledging answers throughout the questionnaire These are ideal for quick responses without interrupting your workflow.
+
+Writing
+
+**Thank you for confirming that.**
+
+Writing
+
+**Understood, I appreciate you clarifying that.**
+
+Writing
+
+**Got it, thank you for providing those details.**
+
+Writing
+
+**That helps clarify the circumstances. Thank you!**
+
+Writing
+
+**I understand. I'll make sure to include that information in the claim.**
+
+4. When the customer doesn't remember certain details
+
+Writing
+
+**That's perfectly alright. I understand it can be difficult to remember every detail of an accident. We'll work with the information you have available.**
+
+5. When the customer provides a very detailed explanation
+
+Writing
+
+**Thank you for walking me through everything. I appreciate the detailed explanation. I'll review what you've shared and ask about anything that still needs clarification.**
+
+6. When the customer is upset or frustrated
+
+Writing
+
+**I understand how frustrating this situation must be, and I'm sorry you're dealing with this. I'll do my best to make the process as smooth as possible for you.**
+
+7. When you need to clarify something they already explained
+
+Writing
+
+**Just to make sure I've understood correctly, could I clarify one detail about what happened?**
+
+8. When transitioning to the other vehicle's details
+
+Writing
+
+**Thank you for sharing those details. I'd now like to ask a few questions about the other vehicle involved. Don't worry if you don't have all the information; whatever you remember will be helpful.**
+
+9. When you've finished collecting accident circumstances
+
+Writing
+
+**Thank you for your patience and for answering those questions. I appreciate your help in gathering the details. Let's move on to the next part of your claim.**
+
+My recommendation for your live chats To avoid sounding repetitive, rotate between these acknowledgements based on the customer's response. Customer response Suggested acknowledgement Provides a straightforward answer Explains something in detail Clarifies a previous answer "**Thank you for confirming.**" "**I appreciate you explaining that.**" "**That helps clarify things, thank you.**" Doesn't remember "**That's alright. We can work with what you remember.**" Describes a stressful accident Provides additional information Is unsure about another driver Answers several questions "**I'm sorry you experienced that.**" "**Thank you, I'll include that information.**" "**No problem. Please share whatever you recall.**" "**Perfect, thank you for those details.**" One small adjustment I'd recommend: Avoid saying "Perfect" or "Great" immediately after someone describes a collision, injury, or distressing experience. Those words work for routine administrative details, but "Thank you for explaining" or "I understand" sounds more considerate when discussing the accident itself. For your Guidewire workflow, a good rhythm is: Ask → Acknowledge → Clarify if needed → Move to the next question. You don't need a separate acknowledgement after every answer. Sometimes simply asking the next relevant question keeps the conversation flowing naturally. The best approach is to acknowledge their time constraints without giving a specific timeframe, while offering them the choice to continue or return later. 1. Recommended response — Polite and professional
+
+Writing
+
+**I completely understand, and I appreciate you letting me know! We still have a few sections of the questionnaire to go through, as we need to gather the necessary details to submit your claim accurately. I wouldn't want to rush you or keep you from your other commitments. Would you prefer to continue for now, or would it be more convenient to start your claim through the TD Insurance App when you have some free time?**
+
+2. If you're already halfway through the questionnaire
+
+Writing
+
+**I understand, and I appreciate your patience so far! We still have some information to review before we can complete the claim submission. I don't want to give you an inaccurate time estimate, but I'm happy to continue if you're available. Would you like to proceed?**
+
+3. If the customer needs to leave immediately
+
+Writing
+
+**Of course, I understand! I wouldn't want to keep you if you have other commitments. You can submit your claim through the TD Insurance App at a more convenient time. If you'd prefer to contact us again through chat, we'll be happy to assist you.**
+
+4. If the customer asks, "How many more questions?"
+
+Writing
+
+**We still have a few details to review, and some additional questions may come up depending on your responses. I want to make sure we capture everything accurately. I appreciate your patience, and I'll guide you through the remaining questions as efficiently as possible.**
+
+Important for your CRO workflow: If the claim hasn't been submitted yet, avoid telling the customer their progress will be saved or that another agent can resume exactly where you left off unless Guidewire supports that functionality. I'd recommend response #2 for customers who are already partway through the claim. It acknowledges their concern, avoids making a time commitment, and lets them decide whether to continue. Please share the three benefits of using a TD Insurance Preferred Auto Body Shop. Once you've provided them, I'll turn them into three concise, professional, and customer-friendly points that you can use in Amazon Connect when a customer prefers their own repair shop. I'll make sure the wording is informative and persuasive without being pushy, while respecting the customer's preference. Here are the three benefits of choosing a TD Insurance Preferred Auto Body Shop, written professionally and in a customer friendly way for your live chats.
+
+Writing
+
+**I completely understand that you may have a repair shop you prefer. However, I'd like to share a few benefits of choosing a TD Insurance Preferred Auto Body Shop so you can make an informed decision. 1. Lifetime Repair Guarantee: Repairs completed at a TD Insurance Preferred Auto Body Shop are guaranteed for the lifetime of your vehicle, as long as you continue to own the vehicle and remain insured with TD Insurance. 2. Rental Vehicle Convenience: Choosing a preferred shop can help make the rental process more convenient, with better coordination between the repair shop and rental provider to help minimize delays and keep you on the road while your vehicle is being repaired. Rental availability and coverage remain subject to your policy. 3. Direct Payment to the Repair Shop: Once the repairs are approved, TD Insurance issues payment directly to the preferred auto body shop, so you don't have to worry about coordinating the repair payment yourself. Any applicable deductible or other out-of-pocket costs would still be your responsibility.**
+
+One thing to confirm: You mentioned "free rental time" as the second benefit. Did you mean free rental vehicle arrangements, extended rental time, or a rental vehicle provided at no cost? These are different benefits, and I want to make sure your customer-facing wording accurately reflects what TD Insurance offers without promising rental coverage that may not apply. When a customer initially declines a TD Insurance Preferred Auto Body Shop but changes their mind after hearing the benefits, your response should sound appreciative and reassuring without making them feel pressured. 1. Acknowledging their decision to use a preferred shop
+
+Writing
+
+**Absolutely! I'd be happy to help you arrange repairs through a TD Insurance Preferred Auto Body Shop. I'll go ahead and review the available options with you so we can get the process started.**
+
+2. Transitioning to the claim summary
+
+Writing
+
+**Thank you for your patience while we went through the claim details. Before we wrap up, I'd like to provide you with a quick summary of your claim and the services we've arranged, along with what you can expect next.**
+
+3. Claim summary — Auto body shop and rental arranged
+
+Writing
+
+**Your claim has now been submitted successfully! Here's a quick summary for your reference: Claim Number: [Claim Number] Repair Arrangements: We've arranged for your vehicle to be assessed through a TD Insurance Preferred Auto Body Shop. Rental Vehicle: We've also initiated the rental vehicle arrangements to assist you while your vehicle is being repaired, subject to your applicable coverage. Next Steps: Your Claims Advisor will contact you within the next business day to review your claim, discuss the next steps, and provide any additional information you may need.**
+
+4. Closing the conversation — Warm and professional
+
+Writing
+
+**I understand that dealing with an accident can be stressful, and I hope we've been able to make the process a little easier for you today. Your Claims Advisor will be in touch within the next business day, and you'll also have their contact information should you need to reach out. Before we wrap up, is there anything else I can clarify or assist you with today?**
+
+5. Final goodbye — After the customer confirms no further questions
+
+Writing
+
+**You're very welcome! Thank you for choosing TD Insurance. I appreciate your time and patience today, and I hope the rest of your day goes smoothly. Take care!**
+
+My recommendation for your Use the following sequence: 1. Acknowledge their decision: Confirm they would like to proceed with a preferred shop. 2. Confirm the arrangements: Only state that the shop and rental are arranged once they've actually been set up. 3. Summarize the claim: Provide the claim number, repair arrangements, rental arrangements, and next steps. 4. Set expectations: Explain that the Claims Advisor will contact them within the next business day. 5. Offer further assistance: Ask whether they have any remaining questions before ending the chat. Important: If the shop or rental has only been requested, rather than confirmed, use "We've initiated the arrangements" instead of "We've arranged." This prevents creating incorrect expectations about confirmed bookings or services. I'd recommend presenting the claim summary in a clear, conversational format so the customer understands their preliminary fault assessment, coverage and deductible information, repair arrangements, rental vehicle, and next steps. The wording should also make it clear that the information provided is preliminary and subject to review by their Claims Advisor. Complete claim summary — Customer-ready script
+
+Writing
+
+**Thank you for your patience throughout the process! Your claim has now been submitted, and I'd like to provide you with a quick summary of what we've discussed and the next steps. Claim Number: [Claim Number] Fault Assessment: Based on the information you've provided, it appears that you may be considered not at fault for this accident. However, this is a preliminary assessment, and your Claims Advisor will confirm the final fault determination following their review. Coverage & Deductible: Based on the information currently available, your applicable deductible is [Deductible Amount]. Please note that the claim review is still ongoing, and your Claims Advisor will confirm the applicable coverage and whether the deductible will be payable once the review is completed. Vehicle Repairs: We've arranged for your vehicle to be assessed at [Shop Name], a TD Insurance Preferred Auto Body Shop. The shop will assist with the next steps in the repair process. Rental Vehicle: We've also arranged a rental vehicle through [Rental Company] to assist with your transportation needs while your vehicle is being repaired. Rental eligibility, duration, and applicable limits remain subject to your coverage and claim review. Next Steps: Your Claims Advisor will contact you by the next business day, Monday, November 16, 2026, to review your claim, confirm the applicable details, and discuss any further steps. Please note that the coverage and fault information I've shared today is for informational purposes only and is not binding. All coverage decisions, deductible applicability, and fault determinations are subject to review and confirmation by your Claims Advisor. Before we wrap up, is there anything else I can clarify or assist you with today?**
+
+Shorter version — Better suited for live chat If you've already discussed the fault assessment, deductible, and services individually during the conversation, I recommend this version to avoid repeating too much information.
+
+Writing
+
+**Thank you for your patience! Before we wrap up, I'd like to summarize your claim and the arrangements we've made today. Claim Number: [Claim Number] Fault: Based on the details provided, you appear to be not at fault. Your Claims Advisor will review and confirm this assessment. Coverage & Deductible: Your deductible is [Amount]. The claim review is ongoing, and your Claims Advisor will confirm the applicable coverage and deductible requirements. Repairs: Your vehicle has been referred to [Shop Name], a TD Insurance Preferred Auto Body Shop. Rental: Your rental vehicle has been arranged through [Rental Company], subject to the applicable coverage and limits. Next Steps: Your Claims Advisor will contact you by Monday, November 16, 2026, to review the claim and discuss the next steps. Please keep in mind that the information provided regarding coverage and fault is preliminary, for informational purposes only, and not binding. Final decisions will be confirmed by your Claims Advisor following their review. Is there anything else I can help you with before we end our chat?**
+
+If the customer asks whether they need to pay the deductible
+
+Writing
+
+**Your policy has an applicable deductible of [Amount]. However, whether you'll be required to pay it will depend on the outcome of the claim review, including the final fault determination and applicable coverage. Your Claims Advisor will be able to confirm this once their review is completed.**
+
+Final closing message
+
+Writing
+
+**You're very welcome! I appreciate your time and patience while we worked through your claim today. Your Claims Advisor will be in touch by the next business day to guide you through the remaining steps. Thank you for choosing TD Insurance, and I hope everything goes smoothly from here. Take care!**
+
+A few important details for your workflow: Fault: Always describe your assessment as preliminary rather than confirming the customer is not at fault. Deductible: Distinguish between the deductible listed on the policy and whether the customer will ultimately be required to pay it. Rental: Only say a rental has been arranged if the booking or service arrangement is confirmed. Coverage: Make sure the customer understands that the information provided is not a final coverage decision. Advisor contact: Monday, November 16, 2026, is the next business day following Friday, November 13. If the claim is opened on Saturday, November 14, Monday is also the next business day, assuming no applicable holiday. Here's the revised claim summary, clearly stating that the claim falls under Collision coverage and the deductible applies, while keeping the final coverage and fault determination subject to the Claims Advisor's review.
+
+Writing
+
+**Thank you for your patience throughout the process! Before we wrap up, I'd like to provide you with a quick summary of your claim and the services we've arranged today. Claim Number: [Claim Number] Fault Assessment: Based on the information you've provided, it appears that you would be considered not at fault for this accident. However, your Claims Advisor will review the circumstances and confirm the final fault determination. Coverage & Deductible: Your claim is being handled under your Collision coverage, and your deductible of [Amount] applies. Please keep in mind that the file review is still ongoing, and your Claims Advisor will confirm the coverage details following their review. Vehicle Repairs: We've arranged for your vehicle to be assessed at [Shop Name], a TD Insurance Preferred Auto Body Shop. Rental Vehicle: We've also arranged a rental vehicle through [Rental Company] to assist with your transportation needs while your vehicle is being repaired, subject to the applicable coverage and limits. Next Steps: Your Claims Advisor will contact you by Monday, November 16, 2026, to review your claim, confirm the details, and guide you through the next steps. Please note that the information shared regarding fault and coverage is for informational purposes only and is not binding. All details remain subject to review and confirmation by your Claims Advisor. Before we wrap up, is there anything else I can clarify or assist you with today?**
+
+This keeps the distinction clear: the Collision deductible applies at this stage, while the Claims Advisor will review the file and confirm the final coverage and fault assessment. Well, the thing is that you didn't mention about non, yeah, it's non-binding. And also now after reading this, the customer is gonna be like, am I at fault? And why do I have to pay my deductible? So what do I do in that case? The key is to explain why the Collision deductible applies even though the customer appears to be not at fault, without suggesting that they are responsible for the accident. I would recommend explaining the deductible immediately after the preliminary fault assessment rather than waiting for the customer to question it. 1. Recommended wording — Fault, Collision coverage, and deductible
+
+Writing
+
+**Fault Assessment: Based on the information you've provided, it appears that you would be considered not at fault for this accident. However, this is a preliminary assessment, and your Claims Advisor will confirm the final fault determination after reviewing the circumstances. Coverage & Deductible: At this stage, your claim is being handled under your Collision coverage, and your deductible of [Amount] applies. I understand this may seem confusing, especially since you may not be at fault. However, the deductible is part of your Collision coverage and does not necessarily mean you're responsible for the accident. Your Claims Advisor will review the claim and confirm whether any changes to the deductible are applicable. Please note that the information shared regarding fault and coverage is for informational purposes only, is non-binding, and remains subject to review and confirmation by your Claims Advisor.**
+
+2. If the customer asks, "Why do I have to pay my deductible if I'm not at fault?"
+
+Writing
+
+**I completely understand your concern. Being not at fault doesn't necessarily mean a deductible won't apply initially. Since your claim is currently being handled under Collision coverage, the applicable deductible is part of that coverage. However, the final fault determination and claim review may affect how the deductible is handled. Your Claims Advisor will review this and confirm whether any adjustments are applicable.**
+
+3. If the customer asks, "So does that mean I'm at fault?"
+
+Writing
+
+**Not necessarily! The deductible and fault determination are two separate aspects of your claim. Based on the information you've shared, you appear to be not at fault. The deductible currently applies because the claim is being handled under Collision coverage. Your Claims Advisor will confirm the final fault assessment and coverage details once the review is completed.**
+
+4. If the customer asks, "Will I get my deductible back?"
+
+Writing
+
+**That's a valid question! Depending on the circumstances of the accident, the final fault determination, and the applicable coverage, there may be situations where the deductible can be adjusted or recovered. However, I wouldn't want to promise an outcome before the review is completed. Your Claims Advisor will be able to confirm whether this applies to your claim.**
+
+5. If the customer says, "But the other driver caused the accident!"
+
+Writing
+
+**I understand, and I appreciate you explaining the circumstances. The information you've provided will be considered during the claim review. Although the deductible currently applies under your Collision coverage, this doesn't mean you've been determined to be at fault. Your Claims Advisor will review the circumstances and confirm the final determination.**
+
+My recommendation for your Guidewire closing summary Use this order: 1. Preliminary fault assessment: Explain that the customer appears to be not at fault. 2. Collision coverage: Explain which coverage is currently being used. 3. Deductible: State the amount and explain that it currently applies regardless of the preliminary fault assessment. 4. Non-binding disclosure: Clarify that the information is preliminary, for informational purposes only, and non-binding. 5. Services arranged: Confirm the preferred auto body shop and rental vehicle. 6. Next steps: Explain that the Claims Advisor will contact them within the next business day. One important consideration: deductible treatment can vary by province, policy wording, and the circumstances of the loss. Avoid promising a deductible refund or waiver unless the applicable claims guidelines support it. The most useful sentence to include proactively is: "**The deductible currently applies because your claim is being handled under Collision coverage; however, this does not necessarily mean you are at fault for the accident.**" That single sentence can prevent much of the confusion before the customer raises the question.
