@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "deckTitle": "Digital Chat New Claim Intake — Customer Questions Only",
+    "deckSubtitle": "Only the questions or consent prompts that need to be sent to the customer during Digital Chat intake.",
+    "deptName": "Claims Response Operations",
+    "teamName": "Digital Chat",
+    "deckPresenter": "Namisha Sharma - Claims Advisor I",
+    "deckDate": "November 17, 2026",
+    "deckSummary": "This version removes internal agent procedures and keeps only customer-facing intake questions. The approach is to ask once, combine related questions, reuse what the customer already provided, and only ask conditional questions when the loss circumstances make them relevant.",
+    "lblRemove": "Not Used in Customer Question View",
+    "lblPartial": "Ask Only If Applicable",
+    "lblKeep": "Core Customer Question",
+    "hdrCall": "Element(s) in Call Monitoring Guide",
+    "hdrChat": "Customer-Facing Chat Wording"
+  },
+  "glossary": [
+    {
+      "avoid": "Repeating information the customer already gave",
+      "approved": "Acknowledge the answer and move to the next missing item",
+      "note": "Do not re-ask a question simply because the information belongs in another ClaimCenter field."
+    },
+    {
+      "avoid": "Field-by-field questioning",
+      "approved": "Combine related items into one natural message",
+      "note": "Use the customer’s own written statement wherever possible."
+    },
+    {
+      "avoid": "Probing for non-essential detail",
+      "approved": "Ask follow-up only when an essential intake fact is unclear",
+      "note": "Detailed investigation can be completed by the handling Claims Advisor."
+    },
+    {
+      "avoid": "Asking optional service questions before they become relevant",
+      "approved": "Discuss the service only when the customer needs it or the circumstances trigger it",
+      "note": "Avoid introducing rental, towing, repair, clinic, or emergency-service conversations unnecessarily."
+    }
+  ],
+  "elements": [
+    {
+      "id": 2001,
+      "code": "1-02.1 / 1-05.1 / 1-05.3 / 1-05.6",
+      "section": "All",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Privacy/PIPEDA Consent, Digital Consent and communication preference.",
+      "chatText": "[APPROVED PRIVACY/PIPEDA + DIGITAL CONSENT WORDING]\n\nPlease confirm whether you consent and whether you prefer email or text for claim communications. If email is selected, confirm the email address. If text is selected, confirm the mobile number and advise that data rates may apply.",
+      "rationale": "Send the consent requirements together instead of creating separate consent conversations."
+    },
+    {
+      "id": 2002,
+      "code": "1-02.5",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Follow-up when Privacy/PIPEDA Consent is declined.",
+      "chatText": "Do you have any questions about the consent wording that I can clarify for you?",
+      "rationale": "Ask once only when the customer declines consent."
+    },
+    {
+      "id": 2003,
+      "code": "1-02.6",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Follow-up when there is no response to consent.",
+      "chatText": "Before we continue, could you please review the consent message above and let me know whether you consent?",
+      "rationale": "One written follow-up only; silence is not treated as consent."
+    },
+    {
+      "id": 2004,
+      "code": "3-01.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Confirm mailing address and best callback number.",
+      "chatText": "Please confirm the best number for your Claims Advisor to reach you and your current mailing address.",
+      "rationale": "Ask in one message only when the contact information still needs confirmation."
+    },
+    {
+      "id": 2005,
+      "code": "3-01.4",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Quebec document-language preference.",
+      "chatText": "Would you like your claim documents in English or French?",
+      "rationale": "Quebec only."
+    },
+    {
+      "id": 2101,
+      "code": "2-02.1 / 2-02.6 / 2-03.1",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Date/time, location and circumstances of loss.",
+      "chatText": "Please tell me what happened and where it happened. You can include the date and approximate time in the same message.",
+      "rationale": "One customer statement should supply the core circumstances, location and timing. Do not probe further when the statement is clear."
+    },
+    {
+      "id": 2102,
+      "code": "2-01.1",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Occupant counts and injury screening for all parties.",
+      "chatText": "How many people were in each vehicle, and did anyone in either vehicle—or any pedestrian or cyclist—report any injuries or pain?",
+      "rationale": "Combines occupant count and injury screening in one message."
+    },
+    {
+      "id": 2103,
+      "code": "2-05.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Driver details when someone other than the authenticated insured was driving.",
+      "chatText": "Since someone else was driving your vehicle, please send their full name, best phone number, address, and the driver’s licence details you have available.",
+      "rationale": "Ask only when the insured was not the driver."
+    },
+    {
+      "id": 2104,
+      "code": "2-05.3",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Minor indicator for insured-vehicle passengers.",
+      "chatText": "Were any of the passengers in your vehicle under 18?",
+      "rationale": "For uninjured passengers, do not ask for names/contact information solely because they were present."
+    },
+    {
+      "id": 2105,
+      "code": "2-04.5 / 2-06.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Available Third Party vehicle/driver/insurance information.",
+      "chatText": "Please send whatever information you have for the other vehicle—year, make/model, licence plate, driver name, insurance company and policy number. If you do not have some of it, that is okay.",
+      "rationale": "Collect what the insured reasonably has instead of turning every incident field into a separate question."
+    },
+    {
+      "id": 2106,
+      "code": "2-07.1 / 2-07.3",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Current vehicle damage and prior damage.",
+      "chatText": "What damage do you see on your vehicle now, and was there any damage there before this incident?",
+      "rationale": "One question replaces separate current-damage, panel-by-panel and prior-damage interviews."
+    },
+    {
+      "id": 2107,
+      "code": "2-10.2 / 2-10.4",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Police/official attendance and charges when applicable.",
+      "chatText": "Did police, fire or ambulance attend? If police attended or a report was filed, were you told that any charges were laid?",
+      "rationale": "Ask once only when this information was not already provided."
+    },
+    {
+      "id": 2108,
+      "code": "2-11.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Drugs or alcohol involvement for the insured driver.",
+      "chatText": "Were any drugs or alcohol involved for you as the driver?",
+      "rationale": "Ask only when the insured vehicle was being driven; do not ask when it was parked."
+    },
+    {
+      "id": 2109,
+      "code": "2-10.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Witness contact information when a witness is mentioned.",
+      "chatText": "You mentioned a witness. If you have it, what is their name and best contact number?",
+      "rationale": "Do not ask about witness details unless a witness was actually identified."
+    },
+    {
+      "id": 2110,
+      "code": "3-09.7",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Vehicle location/towing details when already towed.",
+      "chatText": "Since the vehicle was already towed, what is the towing company name and where is the vehicle now?",
+      "rationale": "Do not run towing-provider or move-vehicle questions when no new tow/move is being arranged."
+    },
+    {
+      "id": 2111,
+      "code": "3-09.1 / 3-09.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Repair-provider choice when repair service is being arranged.",
+      "chatText": "For repairs, would you prefer a TD Insurance preferred auto body shop or a repair facility of your choice?",
+      "rationale": "Only ask when the repair-provider conversation is actually relevant."
+    },
+    {
+      "id": 2112,
+      "code": "3-06.7",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Car-seat screening when a car seat is disclosed.",
+      "chatText": "For the car seat you mentioned, was there visible damage to it? Were the airbags deployed, or was the door closest to the car seat damaged?",
+      "rationale": "Ask only missing eligibility facts; do not start a car-seat screen when no car seat was disclosed."
+    },
+    {
+      "id": 2201,
+      "code": "2-13.2",
+      "section": "Auto / Injury",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Reported injury description.",
+      "chatText": "What injuries or symptoms were reported?",
+      "rationale": "Use the customer’s own wording and avoid a detailed injury interview during initial intake."
+    },
+    {
+      "id": 2202,
+      "code": "2-08.1 / 2-10.2 / 2-12.1 / 2-12.3",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Ambulance involvement and essential injured-person details.",
+      "chatText": "Was the injured person taken by ambulance? If yes, please send their full name, best phone number, whether they are under 18, and their mailing address if you have it.",
+      "rationale": "Collect the minimum information needed for the injury-related setup; use Unknown where permitted instead of extending the chat."
+    },
+    {
+      "id": 2203,
+      "code": "3-10.1",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "PPN clinic offer for an eligible authenticated claimant.",
+      "chatText": "Would you like to use a TD Insurance preferred clinic for your injury care?",
+      "rationale": "Ask only when the authenticated claimant is eligible for the PPN clinic."
+    },
+    {
+      "id": 2204,
+      "code": "1-04.1 / 1-04.2",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "PPN consent after the authenticated claimant accepts the clinic.",
+      "chatText": "[APPROVED PPN CONSENT WORDING]\n\nPlease confirm whether you consent.",
+      "rationale": "Send only after an eligible authenticated claimant accepts the PPN clinic."
+    },
+    {
+      "id": 2301,
+      "code": "2-02.1 / 2-02.6 / 2-03.1 / 2-07.4 / 2-07.5",
+      "section": "Res",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Date/time, location, circumstances, affected rooms/property and prior damage.",
+      "chatText": "Please tell me what happened, when it happened, and what areas or items were damaged. If there was any damage already there before this loss, include that in the same message.",
+      "rationale": "One broad customer statement replaces room-by-room, item-by-item and separate prior-damage questioning."
+    },
+    {
+      "id": 2302,
+      "code": "3-08.1",
+      "section": "Res",
+      "status": "keep",
+      "proposed": true,
+      "callText": "Immediate Residential safety / emergency need.",
+      "chatText": "Is the source of the damage stopped, and are you able to stay safely in the home?",
+      "rationale": "Focus the initial Residential intake on the immediate situation rather than the full questionnaire."
+    },
+    {
+      "id": 2303,
+      "code": "2-03.5",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Visible mould for water losses.",
+      "chatText": "Can you see any visible mould in the affected area?",
+      "rationale": "Water losses only, and only if the customer has not already addressed mould in their description."
+    },
+    {
+      "id": 2304,
+      "code": "2-10.2 / 2-10.4",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Officials/police involvement when relevant to the Residential loss.",
+      "chatText": "Did police or the fire department attend? If a police report was filed, were you told that any charges were laid?",
+      "rationale": "Ask only when relevant to the type of Residential loss and not already provided."
+    },
+    {
+      "id": 2305,
+      "code": "3-08.1 / 3-08.4",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Emergency mitigation/provider decision when emergency service is actually needed.",
+      "chatText": "Would you like us to arrange emergency mitigation, or would you prefer to use your own service provider?",
+      "rationale": "Only ask when emergency mitigation is actually being offered."
+    },
+    {
+      "id": 2306,
+      "code": "2-07.4",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Theft / mysterious disappearance description.",
+      "chatText": "What was stolen or is missing?",
+      "rationale": "Theft/mysterious disappearance only. Use the customer’s answer as provided and avoid a detailed inventory interview during initial chat."
+    }
+  ]
+}
