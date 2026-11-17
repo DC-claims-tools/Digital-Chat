@@ -1,0 +1,1325 @@
+{
+  "meta": {
+    "deckTitle": "Digital Chat New Claim Intake — Call Monitoring Guide Recommendations",
+    "deckSubtitle": "A channel-specific proposal to remove unnecessary questions, simplify conditional intake, and retain the controls needed to open and route the claim.",
+    "deptName": "Claims Response Operations",
+    "teamName": "Digital Chat",
+    "deckPresenter": "Namisha Sharma - Claims Advisor I",
+    "deckDate": "November 16, 2026",
+    "deckSummary": "This proposal reviews each Call Monitoring Guide Element against the Digital Chat journey. The recommendation is to use information already provided, combine related questions, avoid investigative follow-up during initial intake, and ask only what is needed to open the claim, identify injuries, arrange an immediate service, or give the customer the required next step.",
+    "lblRemove": "What Should Be Removed from Digital Chat",
+    "lblPartial": "What Should Be Simplified / Adapted for Digital Chat",
+    "lblKeep": "What Should Be Kept in Digital Chat",
+    "hdrCall": "Current Call Monitoring Guide Requirement",
+    "hdrChat": "Recommended Digital Chat Treatment"
+  },
+  "glossary": [
+    {
+      "avoid": "Repeat authentication questions inside the claim intake",
+      "approved": "Use the authenticated chat entry; do not re-authenticate during intake",
+      "note": "A claim is opened in chat only when authenticated entry is already established."
+    },
+    {
+      "avoid": "Send Privacy/PIPEDA and Digital Consent as separate conversations",
+      "approved": "Send Privacy/PIPEDA and Digital Consent together; record each outcome separately",
+      "note": "Reduces messages without combining the required consent outcomes."
+    },
+    {
+      "avoid": "Probe after a clear customer statement",
+      "approved": "Use the insured’s own clear statement and ask only for missing essentials",
+      "note": "Keeps the intake focused on claim opening rather than investigation."
+    },
+    {
+      "avoid": "Ask every questionnaire field aloud/in chat",
+      "approved": "Use known facts and Unknown where permitted; ask only scenario-triggered essentials",
+      "note": "Prevents the questionnaire from becoming a second full interview."
+    },
+    {
+      "avoid": "Repeat a need the customer already stated",
+      "approved": "Act on information already provided, including rental, tow, injuries and location",
+      "note": "Avoids duplicate questions and keeps the conversation moving."
+    }
+  ],
+  "elements": [
+    {
+      "id": 1037,
+      "code": "1-02.2",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) The advisor is expected to obtain PIPEDA consent from all appropriate injured parties and document the claim.",
+      "chatText": "Proposed Digital Chat standard: Remove the requirement to obtain consent from additional injured parties inside this insured-only chat. Consent can only be obtained here from the person who entered authenticated. Record other injured parties and leave their own consent/follow-up to an authenticated contact with the Claims Advisor.",
+      "rationale": "The current chat process cannot manually authenticate another injured person who is not the authenticated customer in the session."
+    },
+    {
+      "id": 1001,
+      "code": "1-02.3",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) PIPEDA consent must be obtained from each injured party prior to beginning the AB and/or BI questionnaire.",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1002,
+      "code": "1-03.2",
+      "section": "All",
+      "status": "remove",
+      "proposed": true,
+      "callText": "The call recording disclosure must be read to vendors and any third parties including when the call is being transferred",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1003,
+      "code": "1-03.3",
+      "section": "All",
+      "status": "remove",
+      "proposed": true,
+      "callText": "Inform all participants who join the call that the conversation is being recorded. This would also include calls to vendors: \"I would like to inform you that your call will be recorded for training purposes; to enhance customer service, security and to confirm our discussion with you\" See -> \"Authentication (td.com)\"",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1051,
+      "code": "2-02.5",
+      "section": "Auto / Res",
+      "status": "remove",
+      "proposed": true,
+      "callText": "For cases where the loss is reported by someone other than the named customer, an attempt must be made to complete the following fields during the new contact creation: Full name, & best contact number(s).",
+      "chatText": "Proposed Digital Chat standard: Remove non-named-reporter intake from this channel. A claim can only be opened for the contact on the account who entered the chat authenticated.",
+      "rationale": "The current Digital Chat process cannot manually authenticate another reporter to open the claim."
+    },
+    {
+      "id": 1062,
+      "code": "2-04.4",
+      "section": "Auto",
+      "status": "remove",
+      "proposed": true,
+      "callText": "The advisor is expected to ask & complete the total theft questionnaire in CC.",
+      "chatText": "Proposed Digital Chat standard: Do not complete the full Total Theft questionnaire during initial chat intake. Open the claim using the essential theft facts and leave the detailed questionnaire to the handling Claims Advisor.",
+      "rationale": "The questionnaire is lengthy and can be reviewed during the Claims Advisor’s initial follow-up."
+    },
+    {
+      "id": 1065,
+      "code": "2-05.4",
+      "section": "Auto",
+      "status": "remove",
+      "proposed": true,
+      "callText": "Determine and document whether the trip was for business or personal purposes and document this accurately in the applicable field.",
+      "chatText": "Proposed Digital Chat standard: Remove the business-versus-personal trip question from the initial Digital Chat intake and leave it for Claims Advisor follow-up if needed.",
+      "rationale": "This question does not need to interrupt the core claim-opening conversation."
+    },
+    {
+      "id": 1066,
+      "code": "2-05.5",
+      "section": "Auto",
+      "status": "remove",
+      "proposed": true,
+      "callText": "If the passenger in the vehicle is a minor you do not have to ask their address &/or phone number if you confirm that the other driver/passenger is their parent or legal guardian, & they live under the same household. If this is the case, you are still expected to transfer the address & contact number over to the passenger incident.",
+      "chatText": "Proposed Digital Chat standard: This detailed address/contact transfer rule is not needed for uninjured passengers under the proposed chat model. For an injured minor, use the applicable injury/AB process instead.",
+      "rationale": "The proposed intake does not collect full personal details for uninjured passengers."
+    },
+    {
+      "id": 1026,
+      "code": "2-07.2",
+      "section": "Auto",
+      "status": "remove",
+      "proposed": true,
+      "callText": "Clearly document all affected body panels in the damage description field.",
+      "chatText": "Proposed Digital Chat standard: Remove the separate requirement to identify every affected body panel during initial chat. Use the damage description provided by the insured and leave detailed panel confirmation to repair/appraisal/Claims Advisor follow-up.",
+      "rationale": "Panel-by-panel questioning adds chat friction without changing the immediate claim-opening decision."
+    },
+    {
+      "id": 1004,
+      "code": "2-08.3",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) The BI questionnaire must be completed with all available BI claimants in Alberta and Atlantic provinces ONLY.",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1005,
+      "code": "2-12.5",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) If the injured party is not available then the advisor must setup a follow-up time unless there are confirmed injuries. If the injuries are confirmed, the advisor is expected to setup the exposure instead of a follow-up activity.",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1006,
+      "code": "2-12.6",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) The advisor is expected to screen all claims with confirmed Third Party injuries. In the event the Third Party is not available to speak with OR Third Party information not available, the advisor is expected to contact the Third Party insurer and speak with the handling adjuster. If any member of the household is reached (any relative) and advises no injuries to any other party, no follow up is required",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1007,
+      "code": "2-12.7",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) In the event of TD vs TD, the advisor will review the claims & create the exposure based on best judgement",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1008,
+      "code": "2-12.8",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) When speaking with a BI claimant, the advisor is expected to confirm the mailing address and update Parties Involved when applicable",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1100,
+      "code": "3-06.4",
+      "section": "Res",
+      "status": "remove",
+      "proposed": true,
+      "callText": "The advisor is expected to advise the customer of any applicable limits on the policy, this includes Sewer Backup and Extended Water Damage.",
+      "chatText": "Proposed Digital Chat standard: Do not review Sewer Backup or Extended Water Damage policy limits during initial Residential chat intake. Leave detailed limit discussion to the handling Claims Advisor.",
+      "rationale": "Detailed limit discussions can expand the intake into a lengthy coverage conversation before the claim facts and immediate needs are finished."
+    },
+    {
+      "id": 1108,
+      "code": "3-08.3",
+      "section": "Res",
+      "status": "remove",
+      "proposed": true,
+      "callText": "If the home is unlivable (e.g., large loss fires, prohibited access (government order) and mass evacuations. Inclusive of claims during/outside of business hours) & the customer requires additional living expenses, the advisor is expected to assign to My Key. – only applicable to Res claims. Out of scope for MyKey: \"Grey Area\" claims, claims with an advisor/dispatcher assigned and claims in licensed provinces.",
+      "chatText": "Proposed Digital Chat standard: Do not assign MyKey during initial Digital Chat intake. If the home is unlivable, advise the customer they may arrange a reasonable hotel themselves, keep the receipts, and the Claims Advisor will discuss next steps and confirm whether reimbursement is covered.",
+      "rationale": "Removes a longer service workflow from initial chat while still giving the customer a practical immediate step without promising coverage."
+    },
+    {
+      "id": 1009,
+      "code": "3-14.3",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) All BI notes must be coded as \"Related to BI\".",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1010,
+      "code": "3-14.4",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound) The BI questionnaire must be pasted into a BI note.",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1011,
+      "code": "3-14.5",
+      "section": "All",
+      "status": "remove",
+      "proposed": true,
+      "callText": "The advisor is expected to document the name(s) of the caller(s) who were read the call recording disclosure",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1012,
+      "code": "3-16.1",
+      "section": "Injury",
+      "status": "remove",
+      "proposed": true,
+      "callText": "(Outbound AB/BI) If claimant is reached, the activity must be completed from the work plan & note the claim with the conversation",
+      "chatText": "Proposed Digital Chat standard: Remove this element from inbound claim-opening chat. It is specific to outbound or recorded voice-call handling.",
+      "rationale": "The underlying requirement remains relevant to the applicable voice/outbound workflow, but it should not create an inbound chat monitoring requirement."
+    },
+    {
+      "id": 1035,
+      "code": "1-01.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Authentication must occur before disclosing any policy specific information. Refer to Authentication Procedure Authentication (td.com) · Note: The mailing address cannot be used as a valid authentication credential.",
+      "chatText": "Proposed Digital Chat standard: Claim opening is available only when the insured has already authenticated on entry to chat. Do not run a second manual authentication inside the intake. If authenticated entry is not established, do not open the claim in chat.",
+      "rationale": "Uses the authentication already completed before the claim-opening journey and avoids duplicate questions."
+    },
+    {
+      "id": 1036,
+      "code": "1-02.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to obtain PIPEDA consent once from the appropriate party and document the claim.",
+      "chatText": "Proposed Digital Chat standard: Send Privacy/PIPEDA Consent and Digital Consent together in one chat message. Record the customer’s response to each consent separately.",
+      "rationale": "Combines two required consent conversations into one customer message without combining the recorded outcomes."
+    },
+    {
+      "id": 1013,
+      "code": "1-02.4",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) Play the script when required. If reading aloud, ensure it is read verbatim.",
+      "chatText": "Proposed Digital Chat standard: Keep the required outcome, but use the approved written chat wording instead of a voice-only, read-aloud or transferred-call step.",
+      "rationale": "Adapts the channel without adding an unnecessary voice-based step to text chat."
+    },
+    {
+      "id": 1014,
+      "code": "1-02.5",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If response to consent is no, ask the customer if they heard the Privacy Consent recording and offer to play/read if they did not. Manually confirm if the client consents.",
+      "chatText": "Proposed Digital Chat standard: If the customer says No to consent, ask whether they have any questions about the consent. If they continue to decline, complete the claim intake but do not set up services in chat; the Claims Advisor can follow up on next steps.",
+      "rationale": "Replaces an audio-recording question with a clear written-chat response to a consent refusal."
+    },
+    {
+      "id": 1015,
+      "code": "1-02.6",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If response to consent is no response, ask the customer if they heard the Privacy Consent recording and offer to play/read if they did not. Manually confirm if the client consents.",
+      "chatText": "Proposed Digital Chat standard: If the customer does not answer the consent message, ask once whether they can review and respond to it. Do not treat silence as consent or repeat an audio-recording question.",
+      "rationale": "Text chat has no privacy recording to replay; the consent response still needs to be clear."
+    },
+    {
+      "id": 1016,
+      "code": "1-02.7",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If the client is transferred, play/read the PIPEDA consent. Manually confirm if the client consents · PIPEDA consent is obtained through IVR prompter · Refer to the Consent Procedure -> \"Claims Consent - Privacy and Digital Disclosure (td.com)\"",
+      "chatText": "Proposed Digital Chat standard: If consent still needs to be obtained after a transfer, send the same approved written consent message in chat and record the response. No audio playback/read-aloud step.",
+      "rationale": "Keeps the consent outcome while removing the voice-only delivery method."
+    },
+    {
+      "id": 1017,
+      "code": "1-03.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "After the customer/vendor identifies themselves, the advisor must: Identify themselves, brand (TD Insurance) & advise the caller that the call is being recorded for quality purposes prior to discussing any information.",
+      "chatText": "Proposed Digital Chat standard: Keep the advisor identification and TD Insurance branding in the chat greeting. Remove the voice-call recording disclosure from a text-only chat.",
+      "rationale": "Only the recording portion is call-specific; advisor/brand identification should remain."
+    },
+    {
+      "id": 1018,
+      "code": "1-04.1",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) The advisor is expected to read the PPN Consent Script when the customer/parties accepts the PPN Clinic for all provinces.",
+      "chatText": "Proposed Digital Chat standard: When the authenticated person in chat accepts the PPN Clinic, send the approved PPN consent wording in chat.",
+      "rationale": "PPN consent can be delivered in writing to the authenticated person who is opening the claim."
+    },
+    {
+      "id": 1019,
+      "code": "1-04.2",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) When reading PPN consent, the script must be read verbatim.",
+      "chatText": "Proposed Digital Chat standard: Send the approved PPN consent wording exactly as required in written form. Do not create a separate read-aloud requirement for chat.",
+      "rationale": "Preserves controlled wording while adapting delivery to text chat."
+    },
+    {
+      "id": 1039,
+      "code": "1-05.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor must ask for the customers digital consent and communication preference.",
+      "chatText": "Proposed Digital Chat standard: Ask Digital Consent and communication preference in the same message as Privacy/PIPEDA Consent rather than starting a second consent conversation.",
+      "rationale": "One combined message reduces back-and-forth while still recording each required choice."
+    },
+    {
+      "id": 1020,
+      "code": "1-05.2",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If the client is transferred, play/read the Digital Consent script. Manually confirm if the client consents.",
+      "chatText": "Proposed Digital Chat standard: Keep the required outcome, but use the approved written chat wording instead of a voice-only, read-aloud or transferred-call step.",
+      "rationale": "Adapts the channel without adding an unnecessary voice-based step to text chat."
+    },
+    {
+      "id": 1040,
+      "code": "1-05.3",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If email is selected, confirm and document the e-mail address. If text is selected, confirm and document the mobile number and advise data rates may apply.",
+      "chatText": "Proposed Digital Chat standard: Confirm only the communication method the customer selected. If email is selected, confirm the email address. If text is selected, confirm the mobile number and advise that data rates may apply.",
+      "rationale": "Avoids asking the customer to confirm both contact methods when only one was selected."
+    },
+    {
+      "id": 1021,
+      "code": "1-05.6",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "When reading digital consent, the script must be read verbatim. Refer to the Consent Procedure -> \"Claims Consent - Privacy and Digital Disclosure (td.com)\"",
+      "chatText": "Proposed Digital Chat standard: Send the approved Digital Consent wording in writing as part of the combined consent message. Do not add a separate read-aloud step.",
+      "rationale": "The controlled wording remains; only the voice delivery method changes."
+    },
+    {
+      "id": 1046,
+      "code": "2-01.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound) The advisor is expected to confirm with the caller if there were any injuries to any and all parties involved, any and all occupants for both customer and Third Party vehicle(s) as well as pedestrians/cyclist. This also applies to ALL parties involved on all SBI Auto calls. · Asking if everyone is ok is considered part of LEI.",
+      "chatText": "Proposed Digital Chat standard: Ask occupant counts and injuries together. Example: “How many people were in each vehicle, and did anyone in either vehicle—or any pedestrian/cyclist—report any injuries or pain?” Reuse the answer and do not separately re-screen each person if the response is clear.",
+      "rationale": "One message can establish occupant counts and the injury branch for all parties."
+    },
+    {
+      "id": 1047,
+      "code": "2-02.1",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor must document the date & the time of the loss provided by the customer in CC. The advisor is expected to confirm if the TOL is in the AM or PM, when applicable.",
+      "chatText": "Proposed Digital Chat standard: Ask the date and approximate time of loss together. Confirm AM/PM only when the time provided is ambiguous.",
+      "rationale": "Keeps the required loss timing without splitting it into multiple prompts."
+    },
+    {
+      "id": 1052,
+      "code": "2-02.6",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to clearly capture where the loss occurred. If unable to get an exact address, intersection or landmark would be expected to narrow down the location.",
+      "chatText": "Proposed Digital Chat standard: Ask “What happened and where did it happen?” in one message. If the insured clearly gives the circumstances and location, copy/paste their own words into ClaimCenter and do not ask probing follow-up questions.",
+      "rationale": "A clear statement such as “I was on Hwy 401 eastbound near Keele St in Toronto and the TP rear-ended me” already provides the core circumstances and location."
+    },
+    {
+      "id": 1054,
+      "code": "2-03.1",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The description must be fact based and capture an easy to understand snapshot of what happened in the loss. The advisor is expected to ask probing questions to confirm the details of the loss.",
+      "chatText": "Proposed Digital Chat standard: Do not ask probing questions when the insured’s statement already gives a clear, understandable snapshot of the loss. Use the insured’s own message as the circumstances and let the Claims Advisor clarify non-essential detail later.",
+      "rationale": "Reduces repetitive investigation during initial intake."
+    },
+    {
+      "id": 1057,
+      "code": "2-03.4",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The required template details are expected to be captured.",
+      "chatText": "Proposed Digital Chat standard: Use a short Auto template only:\nPrimary Cause: [selected cause]\nCircumstances in Insd’s Own Words: “[copy/paste insured’s message]”\n# of occupants in insd’s veh: [#]\n# of occupants in TP veh: [#]\nNon-essential clarification can be completed by the Claims Advisor.",
+      "rationale": "Keeps the initial loss note focused on the information needed to understand and route the claim."
+    },
+    {
+      "id": 1058,
+      "code": "2-03.5",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "For all water losses, the loss description must indicate whether visual signs of mold are present or absent.",
+      "chatText": "Proposed Digital Chat standard: For a water loss, record whether visible mould is present or absent. Ask this once only if the customer has not already addressed it in their damage description.",
+      "rationale": "Keeps the required water-loss fact without repeating a question already answered."
+    },
+    {
+      "id": 1060,
+      "code": "2-04.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to fill out all applicable fields within the incident creation for pedestrians, cyclists & any Third Party property damage.",
+      "chatText": "Proposed Digital Chat standard: Create pedestrian/cyclist/Third Party property incidents using the information the insured actually provides. Do not chase ownership or other details the insured does not know. Example: if the insured says a stop sign at the intersection was damaged, document that and move on.",
+      "rationale": "Avoids follow-up questions solely to fill fields the customer cannot reasonably answer."
+    },
+    {
+      "id": 1022,
+      "code": "2-04.5",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to gather the required information within the incident(s): · customer Vehicle (or non-owned vehicle operated by customer) — What is the vehicle (i.e. listed on the policy) — Color of the vehicle — License plate number — Whether it was Stolen and/or Parked — Drivable \"Yes\" or \"No\" · Third Party Vehicle — Year, Make and Model — Color of the vehicle — License plate number & province — Was it Parked? — Drivable \"Yes\" or \"No\" — Third Party Owner — Third Party Insurance Company & policy number · Pedestrian/Cyclist — First name and last name — DOB if available OR Minor: Y — Address and phone number — Description of injuries when applicable · Property Incident — Best practice to add the accurate Property description (Structure, Contents, ALE) — Third Party Property owner — Location of property",
+      "chatText": "Proposed Digital Chat standard: Use information already provided and collect the vehicle/party details the customer reasonably has without turning every incident sub-field into a separate question. For Third Party property, document the customer’s description as given and leave unknown ownership/details for follow-up.",
+      "rationale": "The goal is to identify the vehicles/parties and support immediate service decisions, not to interrogate for every unavailable field."
+    },
+    {
+      "id": 1063,
+      "code": "2-05.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to create an incident for all occupants in the customer's vehicle: driver and passengers.",
+      "chatText": "Proposed Digital Chat standard: Create incidents for occupants, but do not collect names/contact information for uninjured passengers. If the insured reports three occupants and no injuries, create Insured Vehicle Passenger 1, Passenger 2, etc. as needed and ask only whether any passenger is a minor.",
+      "rationale": "Uninjured passenger identities do not need to become a full customer interview during initial chat."
+    },
+    {
+      "id": 1023,
+      "code": "2-05.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor will be expected to probe for the following details within the incident creation: · Name · Full address & contact numbers · Driver's License number & province when applicable (Driver Only) · Driver's License Class when applicable, Suspensions & Restrictions for driver (This should be added in the Note Box)",
+      "chatText": "Proposed Digital Chat standard: If the authenticated insured was driving, use the insured information already on file and do not ask for licence/class/suspension/restriction details again. If someone else was driving, collect the driver’s name, phone, address and driver’s licence details required for that driver.",
+      "rationale": "Avoids re-collecting the insured’s own information while still identifying a different driver when applicable."
+    },
+    {
+      "id": 1064,
+      "code": "2-05.3",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Confirm if passenger is a Minor/Document (Note Box: Minor: Y)",
+      "chatText": "Proposed Digital Chat standard: For uninjured insured-vehicle passengers, ask only whether any passenger is a minor and document Minor: Y where applicable. Do not ask for the passenger’s name solely because they were present.",
+      "rationale": "Supports the minor indicator without turning uninjured passengers into separate intake interviews."
+    },
+    {
+      "id": 1068,
+      "code": "2-06.1",
+      "section": "Auto / Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to create an incident for the driver and any injured occupants in the vehicle.",
+      "chatText": "Proposed Digital Chat standard: Create the Third Party driver incident and create passenger incidents only for injured Third Party occupants. If an injured Third Party passenger’s identity is unknown, create an Unknown TP Passenger and document the reported injury.",
+      "rationale": "The insured often does not know Third Party passenger names; unknown should not trigger repeated questioning."
+    },
+    {
+      "id": 1024,
+      "code": "2-06.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Advisor's will be expected to probe for the following details within the incident creation: · Name · Full address & contact numbers · Driver's License number & province · Confirm if passenger is a Minor (Note Box: Minor: Y)",
+      "chatText": "Proposed Digital Chat standard: Do not ask for personal details about an uninjured Third Party passenger. For the Third Party driver, use the details the insured already has. For an injured Third Party occupant, capture only the name/contact/minor information available and document unknowns rather than interrogating for unavailable details.",
+      "rationale": "Keeps the focus on identifiable drivers and injured occupants."
+    },
+    {
+      "id": 1069,
+      "code": "2-06.3",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If the passenger in the vehicle is a minor you do not have to ask their address &/or phone number if you confirm that the other driver/passenger is their parent or legal guardian, & they live under the same household. If this is the case, you are still expected to transfer the address & contact number over to the passenger incident.",
+      "chatText": "Proposed Digital Chat standard: For an injured minor Third Party occupant, flag the minor using the information available. Do not add household/address-transfer questions during initial chat unless they are required to set up the injury exposure.",
+      "rationale": "Minimizes questions about people the insured may barely know."
+    },
+    {
+      "id": 1025,
+      "code": "2-07.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The damage description for the customer vehicle should be from the driver's perspective. Affected body panels must be documented in the damage description box.",
+      "chatText": "Proposed Digital Chat standard: Ask “What damage do you see on your vehicle?” and copy/paste the insured’s wording into ClaimCenter. If they say “rear bumper and tail lights damaged,” document that and move on—do not turn it into a body-panel interview.",
+      "rationale": "The customer’s own description is sufficient for initial intake when it is clear."
+    },
+    {
+      "id": 1027,
+      "code": "2-07.3",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Prior damages must be documented within the regular damages text field within the vehicle incident for the customer vehicle. Affected panels must be documented for prior damages in the damage description box.",
+      "chatText": "Proposed Digital Chat standard: Combine current and prior damage in one question: “What damage do you see now, and was there any prior damage before this incident?” Copy/paste the response and do not probe panel-by-panel.",
+      "rationale": "Two required topics can be captured in one message."
+    },
+    {
+      "id": 1028,
+      "code": "2-07.4",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "For Residential, Commercial Property and Commercial General Liability Claims the advisor is expected to accurately capture the damage that has occurred to the property &/or contents. If it is a theft or mysterious disappearance claim, the advisor is expected to accurately capture what was stolen or what has gone missing. The advisor is also expected to document in which room damages occurred. This all must be captured in the damage description box.",
+      "chatText": "Proposed Digital Chat standard: Ask one broad Residential damage question and copy/paste the customer’s response. Capture the room(s) and damaged property/contents when the customer includes them, but do not run a room-by-room or item-by-item follow-up during initial chat.",
+      "rationale": "The detailed inventory can be clarified by the handling Claims Advisor."
+    },
+    {
+      "id": 1071,
+      "code": "2-07.5",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Prior damages are expected to be reviewed for all Residential claims in the damage description box.",
+      "chatText": "Proposed Digital Chat standard: Include prior Residential damage in the same damage message when needed rather than starting a separate line of questioning.",
+      "rationale": "Combines related information into one customer exchange."
+    },
+    {
+      "id": 1029,
+      "code": "2-08.1",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) The advisor is expected to ask & complete the applicable AB/BI questionnaire in CC. Exclude the following questions during CRO calls: housekeeping limitations and EHC Carrier & Policy number.",
+      "chatText": "Proposed Digital Chat standard: Do not turn the full AB/BI questionnaire into a field-by-field interview during the initial Auto chat. Capture the reported injuries, ambulance involvement and essential claimant/contact/minor information. Where the questionnaire can be completed with unknowns under the existing rules, use unknowns and leave detailed follow-up to the handling advisor.",
+      "rationale": "Keeps the injury branch focused on opening/routing the file rather than conducting the full injury interview inside the Auto intake."
+    },
+    {
+      "id": 1074,
+      "code": "2-08.4",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The questionnaire should only be completed with \"unknowns\" if the claimant is not available to speak with OR the information is unknown.",
+      "chatText": "Proposed Digital Chat standard: Use Unknown when the claimant is unavailable or the information is genuinely unknown. Do not create extra chat questions solely to avoid an Unknown value where the guide permits it.",
+      "rationale": "Prevents the questionnaire from expanding the initial chat unnecessarily."
+    },
+    {
+      "id": 1030,
+      "code": "2-09.1",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to ask & complete the applicable Residential or Commercial Property questionnaire in CC. Do not ask questions aloud if the information has already been captured or is not applicable to the loss.",
+      "chatText": "Proposed Digital Chat standard: Complete the Residential/Commercial Property questionnaire from the customer’s statement and known claim facts using best judgment. Do not ask every questionnaire question. For details such as maintenance or installation history that the customer has not provided, use Unknown where the questionnaire allows it and move on.",
+      "rationale": "The questionnaire should support the claim, not become a second full interview after the customer already described the loss."
+    },
+    {
+      "id": 1075,
+      "code": "2-10.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to document witness information when it is available (Name, Contact #)",
+      "chatText": "Proposed Digital Chat standard: Document witness information when the customer provides it. If they mention a witness but no contact information, ask for it once if available; do not start a witness search when no witness was mentioned.",
+      "rationale": "Keeps the “when available” requirement proportional to the information the customer actually has."
+    },
+    {
+      "id": 1076,
+      "code": "2-10.2",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to confirm if any Officials (Ambulance &/or fire department) & Police are involved in the claim & document all information into the appropriate fields. This requirement applies to Residential claims where relevant.",
+      "chatText": "Proposed Digital Chat standard: Ask once, if not already answered, whether police, fire or ambulance attended. Document the response and do not ask each service as a separate question.",
+      "rationale": "Combines officials/first-responder screening into one message."
+    },
+    {
+      "id": 1078,
+      "code": "2-10.4",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If a police report has been filed, the advisor is expected to confirm if charges were laid when the police are on scene.",
+      "chatText": "Proposed Digital Chat standard: Only if police attended or a police report was filed, ask in the same follow-up whether charges were laid. Do not ask this on claims with no police involvement.",
+      "rationale": "Makes the question scenario-based instead of universal."
+    },
+    {
+      "id": 1079,
+      "code": "2-11.1",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to confirm with the caller if there were any drugs or alcohol involved in the incident for our customer driver. · If the customer vehicle was parked, this question is not required.",
+      "chatText": "Proposed Digital Chat standard: For the insured driver, ask one yes/no drugs-or-alcohol question unless the vehicle was parked. Do not add further probing during initial chat unless the customer answers Yes.",
+      "rationale": "Keeps the required screening concise."
+    },
+    {
+      "id": 1082,
+      "code": "2-12.3",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) If the injured party is a minor, then the advisor must complete the AB exposure with the parent unless they are the policy holder.",
+      "chatText": "Proposed Digital Chat standard: Apply the minor/parent requirement only when an AB exposure is being created for an injured minor. Ask only for the parent/guardian information actually required to set up that exposure.",
+      "rationale": "Keeps the minor requirement tied to the injury claim rather than to every passenger."
+    },
+    {
+      "id": 1084,
+      "code": "2-13.2",
+      "section": "Auto / Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) An injury incident must be created when injuries are advised and documented accurately.",
+      "chatText": "Proposed Digital Chat standard: Ask one injury question such as “What injuries or symptoms were reported?” and copy/paste the response into ClaimCenter. Do not conduct a detailed injury interview during initial intake.",
+      "rationale": "The insured’s own description can support the injury incident and initial routing."
+    },
+    {
+      "id": 1088,
+      "code": "3-01.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to confirm and capture the clients mailing address and best contact number for the caller in CC using the dropdown selection bar. This applies to callers who only have one phone number on file.",
+      "chatText": "Proposed Digital Chat standard: Confirm the best callback number and mailing address in one message when needed. Reuse contact information already on the authenticated account and do not use the mailing address as authentication.",
+      "rationale": "Keeps contact information current without turning it into a second verification process."
+    },
+    {
+      "id": 1031,
+      "code": "3-01.3",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to review the full mailing address listed on file for the named customer - including province & postal code with the exception of Third Party reports.",
+      "chatText": "Proposed Digital Chat standard: Keep the required outcome, but use the approved written chat wording instead of a voice-only, read-aloud or transferred-call step.",
+      "rationale": "Adapts the channel without adding an unnecessary voice-based step to text chat."
+    },
+    {
+      "id": 1032,
+      "code": "3-01.4",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "For QC only: Advisor needs to ask the customer if they would like to receive their documents in French or in English and to document the claim accordingly under parties involved. · Advisors must read the caller's mailing address aloud rather than requesting the caller to verify it themselves.",
+      "chatText": "Proposed Digital Chat standard: Keep the required outcome, but use the approved written chat wording instead of a voice-only, read-aloud or transferred-call step.",
+      "rationale": "Adapts the channel without adding an unnecessary voice-based step to text chat."
+    },
+    {
+      "id": 1095,
+      "code": "3-06.1",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to explain how the policy will cover the loss using non-binding language when discussing the fault, coverage, and deductible, including FAQ scenarios. The advisor is expected to use the correct Conversation Guide & applicable scripts. An example of this verbiage could be \"based on the information you provided\" or \"it seems/appears...\". · The advisor is expected to advise the customer that the adjuster will confirm coverages. · The advisor is expected to ensure that premium impacts are discussed when prompted by the caller.",
+      "chatText": "Proposed Digital Chat standard: Keep the end-of-intake coverage/fault/deductible explanation short and non-binding. State what appears to apply based on the information provided and that the Claims Advisor will confirm. Discuss premium impact only if the customer asks.",
+      "rationale": "Gives the customer the required high-level answer without turning the intake into a long coverage consultation."
+    },
+    {
+      "id": 1098,
+      "code": "3-06.2",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to inform the customer if it appears the policy has rental coverage or does not have rental coverage for drivable & non drivable vehicles excluding no coverage scenarios. For non-licensed advisors in QC, the rental should be set up when there is coverage, however, non-licensed advisors cannot confirm coverage with the customer.",
+      "chatText": "Proposed Digital Chat standard: Only raise rental when it is relevant. If the customer already said they need a rental and rental coverage appears available, acknowledge that and proceed—do not ask again if they need one. If they request rental and coverage does not appear available, explain that. Do not announce lack of rental coverage when rental was never raised and no rental setup is needed.",
+      "rationale": "Uses the customer’s earlier message and avoids creating an unnecessary coverage conversation."
+    },
+    {
+      "id": 1096,
+      "code": "3-06.10",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "Advisors should inform customers of the first-party deductible amount, third-party property damage deductible amount, and whether it may be waived, applied, or noted as 'Deductible Applied; File Review Ongoing.' Deductible amounts are not to be reviewed for SBI Commercial Property/Liability claims.",
+      "chatText": "Proposed Digital Chat standard: Include the applicable first-party deductible in the concise claim summary and explain whether it appears applied/waived/file review ongoing as required. Do not create a separate deductible discussion unless the customer asks a follow-up question.",
+      "rationale": "The customer still receives the deductible information without interrupting the intake earlier."
+    },
+    {
+      "id": 1097,
+      "code": "3-06.11",
+      "section": "Auto / Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "If fault is unclear, the advisor must advise of the potential collision deductible. In all other cases, the specific All Perils, Collision, Comprehensive, or DCPD deductible must be advised.",
+      "chatText": "Proposed Digital Chat standard: When Collision or All Perils is available, do not default the conversation to DCPD. Where first-party physical damage coverage is not available and the required Third Party information supports a potential DCPD path, allow the appropriate preferred repair/photo-estimate service discussion while the Claims Advisor confirms final coverage. Do not promise final coverage or zero out-of-pocket cost before review.",
+      "rationale": "Keeps the immediate repair/service conversation practical while preserving non-binding coverage language."
+    },
+    {
+      "id": 1106,
+      "code": "3-08.1",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to review the Emergency Services Questionnaire and accurately document the answers within the questionnaire. The advisor is expected to follow the advice prompt based on the answers to the Emergency Services questionnaire provided by the customer to know when to offer or not offer Emergency Services to the client · See -> \"CRO Residential Emergency/Commercial Dispatch Job Aid\"",
+      "chatText": "Proposed Digital Chat standard: Use the customer’s loss description and current-safety answers to complete the Emergency Services Questionnaire as far as possible. Ask only the specific unanswered item needed to decide whether emergency service should be offered.",
+      "rationale": "Prevents the emergency questionnaire from becoming a second full Residential interview."
+    },
+    {
+      "id": 1109,
+      "code": "3-08.4",
+      "section": "Res",
+      "status": "partial",
+      "proposed": true,
+      "callText": "· The Advisor is expected to clearly inform the customer they have the choice of service provider, even if the service provider is not within our preferred network. This applies to all services including EMS. · The 'Mitigation Scripting' must be reviewed when Emergency Services are declined.",
+      "chatText": "Proposed Digital Chat standard: When emergency service is actually offered, advise the customer they may choose their provider. If they decline emergency service, send the required mitigation wording once. Do not introduce this conversation when no emergency service is needed.",
+      "rationale": "Makes the provider/mitigation discussion scenario-based."
+    },
+    {
+      "id": 1033,
+      "code": "3-09.7",
+      "section": "Auto",
+      "status": "partial",
+      "proposed": true,
+      "callText": "· For all non-drive vehicles that are not eligible for Early Move, the advisor is expected to read the Move Vehicle consent script · If the customer is roadside or at the scene of the collision, the advisor must advise the customer to tow the vehicle to either directly to a CRC or their preferred shop. · The advisor is expected to offer towing when applicable and advise the customers they have the choice of towing provider. · Advisor is expected to educate the customer that they are not required to sign any documents with the tow agency, other than their consent to move the vehicle · The Advisor is expected to document all applicable tow company information under the services tab. · The expectation for claims being opened in Ontario or Alberta when the client does not consent to 'early move' or 'move vehicle consent' is to follow the applicable conversation guides outlined in the 'Total Loss Stop Storage'.",
+      "chatText": "Proposed Digital Chat standard: If the vehicle was already towed from the scene, ask only for the towing company name and the current vehicle location. Do not run Move Vehicle consent or towing-provider education when no vehicle move is being arranged. If towing is still needed, follow the applicable towing/consent requirement.",
+      "rationale": "Avoids repeating towing steps after the customer has already moved the vehicle."
+    },
+    {
+      "id": 1115,
+      "code": "3-10.1",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) Advisor is expected to promote the PPN clinic to all AB claimants including pedestrians & cyclists except in the following situations: · Customer fails authentication/PIPEDA consent · No injuries were reported but claim was opened due to ambulance fee, loss to personal belongings, hearing aids, dentures, or loss of wages · Claimant only has cuts & scrapes",
+      "chatText": "Proposed Digital Chat standard: Promote the PPN Clinic only when the claimant in the chat is the authenticated person and the existing eligibility criteria are met. Do not attempt PPN consent with another injured person who is not authenticated in the session.",
+      "rationale": "Matches the current limitation that the chat cannot manually authenticate another injured party."
+    },
+    {
+      "id": 1034,
+      "code": "3-10.4",
+      "section": "Injury",
+      "status": "partial",
+      "proposed": true,
+      "callText": "(Inbound/Outbound) The advisor is expected to offer a warm transfer to the PPN clinic intake department when applicable. · Advisors are expected to click the \"Preferred Vendor\" button as \"Yes\" when searching for PPN clinics · Reference -> \"Accident Benefits Clinic PPN Protocols (td.com)\" when necessary · Reference -> \"htThird Partys://w3.td.com/public/Intranet-Portal/documents/MM/MM_Claims_Services/PPN_JobAid.pdf\" when necessary",
+      "chatText": "Proposed Digital Chat standard: Replace the live warm-transfer step with the approved non-voice referral/callback/phone handoff available to Digital Chat.",
+      "rationale": "A text chat cannot perform the same live voice warm transfer as a phone call."
+    },
+    {
+      "id": 1123,
+      "code": "3-15.1",
+      "section": "All",
+      "status": "partial",
+      "proposed": true,
+      "callText": "The advisor is expected to set clear expectations and advise the customer of the following: · Adjuster's name (PD/AB/BI) · Adjuster's follow up exact date OR turnaround time (1-2 business days for AB/BI and manual claims) · Recap of any services setup",
+      "chatText": "Proposed Digital Chat standard: Keep the closing concise: claim number, assigned Claims Advisor name/follow-up expectation, and a recap of services actually set up. Do not re-read the full intake back to the customer.",
+      "rationale": "The close should confirm what happens next without repeating information already captured."
+    },
+    {
+      "id": 1038,
+      "code": "1-04.3",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound/Outbound) Upon acceptance of the PPN clinic, the advisor is expected to adhere to the PPN procedure.",
+      "chatText": "Retain for Digital Chat: once the authenticated customer accepts the PPN Clinic and the required consent is obtained, follow the applicable PPN procedure.",
+      "rationale": "The service procedure still applies after acceptance."
+    },
+    {
+      "id": 1041,
+      "code": "1-05.4",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "SMS/Text communication must not be offered on Residential claims. Offering this option will result in underperformance scoring.",
+      "chatText": "Retain for Digital Chat: do not offer SMS/Text communication on Residential claims.",
+      "rationale": "No change proposed to the Residential SMS restriction."
+    },
+    {
+      "id": 1042,
+      "code": "1-05.5",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Update Status Message Opt-in and Preferred Message Type. If caller accepts Digital Consent but opts out of receiving email or text (Auto) then advisor will enter Digital Consent as Obtained and Status Message Opt In as No.",
+      "chatText": "Retain for Digital Chat as a system update after the customer makes their communication choice. Do not create another customer question for the ClaimCenter update itself.",
+      "rationale": "This is documentation/system work once the customer’s choice is known."
+    },
+    {
+      "id": 1043,
+      "code": "1-06.1",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound/Outbound) When creating the AB package, the advisor is expected to update limits by region.",
+      "chatText": "Retain for Digital Chat as AB package setup. Update the applicable regional limits in the package without creating another customer question.",
+      "rationale": "System/package work only."
+    },
+    {
+      "id": 1044,
+      "code": "1-06.2",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The AB adjuster's name must be captured in the AB package.",
+      "chatText": "Retain for Digital Chat as AB package setup. Capture the assigned AB adjuster name without creating another customer question.",
+      "rationale": "System/package work only."
+    },
+    {
+      "id": 1045,
+      "code": "1-06.3",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor must make every attempt to send the AB package for all opened AB file(s) when mailing address is known and inform the claimant that the AB package is being sent.",
+      "chatText": "Retain for Digital Chat when an AB package is being sent. Use the mailing address already available where possible; if an injured passenger needs a package and the address is not available, ask for the address only when needed for that package.",
+      "rationale": "Keeps the package requirement while avoiding an address question when the address is already known."
+    },
+    {
+      "id": 1048,
+      "code": "2-02.2",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For Atlantic claims that happen within the last hour, the advisor is expected to adjust the time in the applicable field.",
+      "chatText": "Retain for Digital Chat as an advisor system action for applicable Atlantic losses. No additional customer question is needed when the actual loss time is already known.",
+      "rationale": "The time-field adjustment is ClaimCenter work."
+    },
+    {
+      "id": 1049,
+      "code": "2-02.3",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "In the event of a CAT, the advisor is expected to lead the customer to one of the specific CAT DOL, if the loss cause matches the CAT code. The advisor is expected to use the appropriate Event/CAT code once an event has been declared. This also applies to Record only claims.",
+      "chatText": "Retain for Digital Chat as an advisor system action. Use the applicable CAT/Event code from the reported loss facts; ask the customer only if the loss date/cause is genuinely unclear.",
+      "rationale": "CAT coding should not become a separate scripted question."
+    },
+    {
+      "id": 1050,
+      "code": "2-02.4",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor must select the name and relationship to the customer from the drop-down menu in CC.",
+      "chatText": "Retain for Digital Chat as ClaimCenter work using the authenticated customer relationship already established for the chat.",
+      "rationale": "No extra customer question is required to select the relationship when it is already known."
+    },
+    {
+      "id": 1053,
+      "code": "2-02.7",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Advisors must manually enter the caller's name in the 'Reported By' field for all claims (including SBI).",
+      "chatText": "Retain for Digital Chat as ClaimCenter documentation. Enter the authenticated customer’s name in Reported By; do not ask the customer for it again when it is already known.",
+      "rationale": "System documentation only."
+    },
+    {
+      "id": 1055,
+      "code": "2-03.2",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Primary cause must be captured for Auto.",
+      "chatText": "Retain for Digital Chat as advisor coding. Select the Auto primary cause from the insured’s statement without asking a separate primary-cause question when it is clear.",
+      "rationale": "The primary cause can usually be derived from the customer’s own description."
+    },
+    {
+      "id": 1056,
+      "code": "2-03.3",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Circumstances must be captured.",
+      "chatText": "Retain for Digital Chat by using the insured’s own written statement as the circumstances. Do not ask them to restate the same story.",
+      "rationale": "The chat transcript already contains the customer’s circumstances."
+    },
+    {
+      "id": 1059,
+      "code": "2-04.1",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to open a vehicle incident for the customer vehicle (or Non-Owned vehicle operated by the customer) and the Third Party vehicle that was involved in the loss. If the incident is involving a Non-Owned vehicle, make sure to select \"customer Vehicle not involved\" on step 2.",
+      "chatText": "Retain for Digital Chat as ClaimCenter setup. Create the required vehicle incident(s) from the customer’s statement and available policy/party information.",
+      "rationale": "Incident creation is advisor system work."
+    },
+    {
+      "id": 1061,
+      "code": "2-04.3",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to create a property incident for the customer & Third Party when applicable.",
+      "chatText": "Retain for Digital Chat as ClaimCenter setup. Create the applicable property incident from the facts already provided; do not add a separate customer question just to create the incident.",
+      "rationale": "Incident creation is system work."
+    },
+    {
+      "id": 1067,
+      "code": "2-05.6",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For QC only. Incident for guardian needs to be created",
+      "chatText": "Retain for Digital Chat in Quebec when the guardian incident is actually required. Complete it as system work using the injury/guardian information available rather than adding unnecessary questions.",
+      "rationale": "Conditional ClaimCenter setup only."
+    },
+    {
+      "id": 1070,
+      "code": "2-06.4",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Passenger Incidents are not to be opened if no injuries are present.",
+      "chatText": "Retain for Digital Chat: do not create passenger incidents for Third Party passengers when no injuries are reported.",
+      "rationale": "This already supports a shorter intake."
+    },
+    {
+      "id": 1072,
+      "code": "2-07.6",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Damages to equipment/inventory must be reviewed and documented accurately for SBI Auto claims.",
+      "chatText": "Retain for SBI Auto when applicable, but document the equipment/inventory damage the customer provides without adding unnecessary inventory questions during initial chat.",
+      "rationale": "Keep the required documentation while using the customer’s existing description."
+    },
+    {
+      "id": 1073,
+      "code": "2-08.2",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound) If the known injured party cannot complete the AB questionnaire at the time of the call, but they were taken by ambulance, the AB questionnaire will be completed with \"unknowns\".",
+      "chatText": "Retain for Digital Chat: when an injured person was taken by ambulance and cannot complete the questionnaire, complete it using the available facts and Unknown where permitted.",
+      "rationale": "This supports opening the required AB exposure without waiting for a full interview."
+    },
+    {
+      "id": 1077,
+      "code": "2-10.3",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For Quebec, the Joint Report field must also be checked off when applicable within the police report details.",
+      "chatText": "Retain for Digital Chat in Quebec as a ClaimCenter field when applicable. No separate customer question is needed if the Joint Report information is already known.",
+      "rationale": "System documentation only."
+    },
+    {
+      "id": 1080,
+      "code": "2-12.1",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound) In the event of ambulance involvement, the AB exposure must be created.",
+      "chatText": "Retain for Digital Chat as ClaimCenter setup: create the AB exposure when ambulance involvement requires it. No additional customer question is needed beyond the ambulance/injury information already captured.",
+      "rationale": "System action triggered by the injury screen."
+    },
+    {
+      "id": 1081,
+      "code": "2-12.2",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound/Outbound) The advisor is expected to identify the most severely injured occupant of the customer vehicle & create their AB exposure first to generate the proper adjuster skill set assignment (even if the claimant is not available to speak with).",
+      "chatText": "Retain for Digital Chat as routing/system work using the injury information already captured. Do not ask the customer to rank injuries unless the available information is insufficient to identify the most severely injured insured-vehicle occupant.",
+      "rationale": "The element can usually be completed from the injury descriptions."
+    },
+    {
+      "id": 1083,
+      "code": "2-12.4",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound) The advisor is expected to create the Injury Follow Up Activity anytime there are potential injuries to any parties involved in our vehicle who are not able to speak with. This includes any passengers with confirmed or potential injuries.",
+      "chatText": "Retain for Digital Chat as advisor system work. Create the Injury Follow Up Activity from the injury information already captured; do not ask another question solely to create the activity.",
+      "rationale": "No additional customer touchpoint is needed."
+    },
+    {
+      "id": 1085,
+      "code": "2-13.3",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "When injuries are unknown, use expression of pain in neck to code - this will code as minor.",
+      "chatText": "Retain for Digital Chat as injury coding when the injury description is unknown. No separate customer question is needed for the coding convention itself.",
+      "rationale": "System coding only."
+    },
+    {
+      "id": 1086,
+      "code": "2-13.4",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Injury chart should be documented accurately. **NOTE: there will not be any outbound calls to claimant by the CRO on CGL claims",
+      "chatText": "Retain for Digital Chat as documentation using the injury description already provided. Ask a follow-up only when the reported injury cannot be reasonably coded from the customer’s words.",
+      "rationale": "Avoids repeating the injury interview."
+    },
+    {
+      "id": 1087,
+      "code": "2-14.1",
+      "section": "Injury",
+      "status": "keep",
+      "proposed": false,
+      "callText": "(Inbound/Outbound) The advisor is expected to identify & code the body part which best fits the description.",
+      "chatText": "Retain for Digital Chat as advisor coding. Select the best-fit body part from the customer’s injury description rather than asking a separate body-part question when it is already clear.",
+      "rationale": "System coding from information already provided."
+    },
+    {
+      "id": 1089,
+      "code": "3-01.2",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For any account updates (name, address, and telephone number) an Underwriting Activity must be created.",
+      "chatText": "Retain for Digital Chat as advisor system work when the customer actually changes account information.",
+      "rationale": "No additional customer question is required beyond the change the customer already provided."
+    },
+    {
+      "id": 1090,
+      "code": "3-02.1",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to select the most appropriate loss cause as per the circumstances of the loss provided by the caller for FAQ scenarios. For non-FAQ/complex scenarios the advisor may use their discretion",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1091,
+      "code": "3-02.2",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For auto glass claims, the advisor must select the most appropriate loss cause from the list. \"Glass repair\" or \"Glass replacement\" are used by Uniban claims only. · Advisors are expected to avoid using \"Collision with Motor Vehicle\" (Auto) and \"Other\" (Residential)",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1092,
+      "code": "3-03.1",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The fault assessment should reflect the story provided by the customer.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1093,
+      "code": "3-04.4",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "In the Services Tab, \"Deductible Applies?\" should reflect whether you are waiving the deductible at the time of the call or not.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1094,
+      "code": "3-04.5",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "For QC only. For unlicensed advisors, \"Deductible applies?\" should always be 'Deductible Applied; File Review Ongoing' for auto claims. Deductible and coverages cannot be discussed. For licensed advisors \"Deductible applies?\" should be 'Deductible Applied; File Review Ongoing' if we don't have all Third Party's info.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1099,
+      "code": "3-06.3",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to make effective use of Ask Sage when applicable",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1101,
+      "code": "3-06.5",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to help the customer understand their options, where appropriate (claim, record only file, no claim, Express)",
+      "chatText": "Retain for Digital Chat when the customer is deciding whether to proceed with a claim/record only/no claim/Express. Do not introduce every option when the customer has already clearly asked to open the claim.",
+      "rationale": "The options discussion should answer the customer’s actual decision point."
+    },
+    {
+      "id": 1102,
+      "code": "3-06.6",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Grey Guide should be used for All SBI Res claims.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1103,
+      "code": "3-06.7",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "If the customer discloses car seats in the vehicle, the advisor is expected to screen for car seats that meet the following criteria, document the number of car seats eligible for replacement and advise the customer the Adjuster will confirm replacement: · There is visible damage to the car seat · The vehicle is undrivable · There are injuries to the occupants · The airbags deployed · The door closest to the car seat is damaged · Reference -> \"Child Car Seats (td.com)\"",
+      "chatText": "Retain for Digital Chat only when the customer discloses a car seat. Screen the replacement criteria from the facts already provided and ask only missing criteria that affect the screen.",
+      "rationale": "The element is already disclosure-triggered and should stay conditional."
+    },
+    {
+      "id": 1104,
+      "code": "3-06.8",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to inform customers when the collision meets the criteria of a reportable accident based on the 'When to report to police' job aid.",
+      "chatText": "Retain for Digital Chat: when the collision meets the reportable-accident criteria, provide the police-reporting guidance in one concise message.",
+      "rationale": "A single message provides the required direction without extending the intake."
+    },
+    {
+      "id": 1105,
+      "code": "3-06.9",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to use the correct conversation guide anytime emergency services are accepted but coverage has not been confirmed. This includes any Grey Area situations and unverified policies",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1107,
+      "code": "3-08.2",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "If the Advisor offers Emergency Services and the customer accepts, the advisor is expected to dispatch an Emergency PPN using the services tab in CC10.",
+      "chatText": "Retain for Digital Chat when emergency service is offered and accepted. Dispatch the applicable provider as system work without adding unrelated questions.",
+      "rationale": "Service setup remains necessary when accepted."
+    },
+    {
+      "id": 1110,
+      "code": "3-09.1",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "When speaking with a customer that has the appropriate coverage required for their loss, the advisor is expected to speak to the benefits of the Preferred Vendor Program and only select an TDI AC's as a first choice if it is within the customers geography",
+      "chatText": "Retain for Digital Chat only when a repair service is being discussed. Present the preferred-program benefit as an option and do not start a repair-provider conversation when the customer has not reached that stage.",
+      "rationale": "Keeps service choice relevant to the customer’s immediate need."
+    },
+    {
+      "id": 1112,
+      "code": "3-09.2",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The Advisor is expected to clearly inform the customer they have the choice of service provider, even if the service provider is not within our preferred network. This applies to all services (Appraisal/DRP/Rental/Towing/Emergency Services). TDI AC's should only be offered as the first option if it meets the customers needs (A reasonable distance from home/work)",
+      "chatText": "Retain for Digital Chat when a service is being arranged: advise the customer they have a choice of provider. Do not repeat provider-choice wording for services that are not being discussed.",
+      "rationale": "Makes the disclosure conditional on an actual service conversation."
+    },
+    {
+      "id": 1113,
+      "code": "3-09.4",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to offer an appraisal based on the customers preference (in-person or PBE) if customer selects PBE the following eligibility criteria must be met: · Digital consent must be obtained · Customer must own a smart phone · Vehicle must be in possession of the customer · Vehicle damage must be visible · Early Move has not been offered",
+      "chatText": "Retain for Digital Chat when appraisal is being arranged. Use the existing customer statement and eligibility facts; do not ask eligibility questions that have already been answered in chat.",
+      "rationale": "Prevents duplicate questions during service setup."
+    },
+    {
+      "id": 1114,
+      "code": "3-09.6",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to follow the 'Early Move Process' when the following eligibility criteria are met: · Consent has been obtained · Location of the customer vehicle is known to the customer · Vehicle is not currently at the scene of the accident",
+      "chatText": "Retain for Digital Chat when Early Move eligibility is triggered. Use information already captured about consent and vehicle location rather than asking it again.",
+      "rationale": "Conditional service workflow; reuse existing answers."
+    },
+    {
+      "id": 1111,
+      "code": "3-09.10",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to capture the correct rental limit as well as the correct vehicle class when a reservation is set up. If non-preferred rental, capture applicable details",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1116,
+      "code": "3-12.1",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "If the advisor did not meet the criteria in registering the complaint within CCMA - this would be scored down as a formal miss and would impact results. If the advisor logs a complaint in CCMA that does not meet the definition of a complaint - this would not be scored down and would be called out as a coaching opportunity",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1117,
+      "code": "3-13.1",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is to avoid creating an objection for the customer.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1118,
+      "code": "3-13.2",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to provide accurate information regarding policy, procedures, and coverage and must not provide incorrect or misleading information.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1119,
+      "code": "3-14.1",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "All discussions related to the required items must be documented: · The name(s) of the person(s) that we were speaking to · Fault · Deductible amount · Coverage · If the customer was advised to file a police report · Move-vehicle consent (non-drives that do not qualify for Early Move) · The reason why any service was not offered or declined or not arranged. This includes the Early Move/DRP/TDI AC/PPN and Towing · The rationale for rental and emergency services can be documented in the services tab and under the Emergency services questionnaire · Adjuster follow up date (PD)/timeline (AB/BI) · Actual time of loss for Atlantic claims that happened within the last hour",
+      "chatText": "Retain for Digital Chat when applicable. Reuse information already provided and avoid asking the customer the same fact twice.",
+      "rationale": "No removal is proposed unless a specific channel simplification is listed below."
+    },
+    {
+      "id": 1120,
+      "code": "3-14.2",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "All policy references need to be documented",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1121,
+      "code": "3-14.7",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Advisor expectation is to document any changes to the claim after the claim creation in the final note · Advisors must document any errors that prevent completion of criteria within the Call Monitoring Guide.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1122,
+      "code": "3-14.8",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "There is no expectation to document the Residential coverage conversation guide which was reviewed as this is embedded within Claim Center. If the advisor overrides the recommended coverage conversation this must be documented in the Property Incident.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1124,
+      "code": "3-15.2",
+      "section": "Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "When applicable, for residential claims and Commercial Property claims the advisor is expected to remind the customer: \"Please do not throw out or discard anything prior to a TDI assigned contractor or appraiser visiting your home\".",
+      "chatText": "Retain for Digital Chat when applicable: send the “do not throw out or discard anything” Residential reminder in one message.",
+      "rationale": "A concise written reminder protects evidence/property before inspection."
+    },
+    {
+      "id": 1125,
+      "code": "3-15.3",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Send accurate claim details using communication tab in CC when applicable.",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    },
+    {
+      "id": 1126,
+      "code": "3-15.4",
+      "section": "All",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to use the proper procedure for SOC/NOA claims Statement of Claim and advise customer of the proper fax number for joint reports",
+      "chatText": "Retain for Digital Chat when SOC/NOA or Joint Report handling applies. Provide the required procedure/fax information in writing.",
+      "rationale": "Conditional post-intake instruction only."
+    },
+    {
+      "id": 1127,
+      "code": "3-15.5",
+      "section": "Auto",
+      "status": "keep",
+      "proposed": false,
+      "callText": "Provide SAAQ number when injuries are present in QC. (1-888-810-2525) Communication tab is not available for SBI claims**",
+      "chatText": "Retain for Digital Chat: when injuries are present in Quebec, provide the SAAQ number in writing.",
+      "rationale": "Conditional Quebec injury disclosure."
+    },
+    {
+      "id": 1128,
+      "code": "3-17.1",
+      "section": "Auto / Res",
+      "status": "keep",
+      "proposed": false,
+      "callText": "The advisor is expected to follow the correct procedures when handling Employee claims and PCIS & TDBG Titled Officers claims. See -> \"TDI Employee Claims (including TDBG Titled Officers)\" / \"Claims Job Aid for VIP Customers\"",
+      "chatText": "Retain for Digital Chat as advisor/ClaimCenter work. This should not create an additional customer question unless information is genuinely missing and required.",
+      "rationale": "The element can be completed from the claim facts, policy, system workflow or information already provided."
+    }
+  ]
+}
